@@ -1,0 +1,9 @@
+- hosts: CLIENT
+  vars_files:
+   - "{{ playbook_dir }}/globalvars/all.yml"
+  roles:
+   - {role: apache2, tags: apache2}
+   - {role: copy, tags: copy}
+   - {role: ntp, tags: ntp}
+   - {role: firewall, tags: firewall}
+   - {role: users, tags: users}

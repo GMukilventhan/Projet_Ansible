@@ -1,0 +1,36 @@
+---
+# tasks file for roles/ntp
+#
+- name: Installation of ntp
+  ansible.builtin.apt:
+    name: ntp
+    state: present
+  register: result_ntp
+
+- name: show result_ntp
+  debug:
+    var: result_ntp
+
+- name: Already installed
+  debug:
+    msg: "ntp is already installed"
+  when: result_ntp.changed == false
+
+- name: Restart ntp
+  service:
+    name: ntp
+    state: restarted
+  when: result_ntp.changed == true
+
+- name: Creation du fichier ntp
+  file:
+    dest: "/etc/ntp.conf"
+    state: touch
+    mode: 0644
+
+- name: Ajouter les serveurs NTP avec une liste et boucle  dans le fichier
+  lineinfile:
+    path: "/etc/ntp.conf"
+    line: "server {{ item }}"
+    state: present
+  loop: "{{ ntp_server }}"

@@ -1,0 +1,976 @@
+2023-03-30 20:15:50,603 p=3277 u=root n=ansible | - Role roles/apache2 was created successfully
+2023-03-30 20:38:32,589 p=3382 u=root n=ansible | [WARNING]:  * Failed to parse /etc/ansible/inventory with yaml plugin: We were unable to read either
+as JSON nor YAML, these are the errors we got from each: JSON: Expecting value: line 1 column 3 (char
+2)  Syntax Error while loading YAML.   did not find expected <document start>  The error appears to
+be in '/etc/ansible/inventory': line 2, column 1, but may be elsewhere in the file depending on the
+exact syntax problem.  The offending line appears to be:  [ CLIENT ] 192.168.73.175 ^ here
+
+2023-03-30 20:38:32,589 p=3382 u=root n=ansible | [WARNING]:  * Failed to parse /etc/ansible/inventory with ini plugin: /etc/ansible/inventory:1:
+Invalid section entry: '[ CLIENT ]'. Please make sure that there are no spaces in the section entry,
+and that there are no other invalid characters
+
+2023-03-30 20:38:32,590 p=3382 u=root n=ansible | [WARNING]: Unable to parse /etc/ansible/inventory as an inventory source
+
+2023-03-30 20:38:32,590 p=3382 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-03-30 20:38:32,594 p=3382 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit
+localhost does not match 'all'
+
+2023-03-30 20:38:32,705 p=3382 u=root n=ansible | ERROR! Attempting to decrypt but no vault secrets found
+2023-03-30 20:41:40,783 p=3418 u=root n=ansible | [WARNING]: Error in vault password file loading (default): Problem running vault password script
+/root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the
+executable bit from the file.
+
+2023-03-30 20:41:40,784 p=3418 u=root n=ansible | ERROR! Problem running vault password script /root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the executable bit from the file.
+2023-03-30 20:42:44,936 p=3433 u=root n=ansible | [WARNING]: Error in vault password file loading (default): Problem running vault password script
+/root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the
+executable bit from the file.
+
+2023-03-30 20:42:44,936 p=3433 u=root n=ansible | ERROR! Problem running vault password script /root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the executable bit from the file.
+2023-03-30 20:43:37,934 p=3443 u=root n=ansible | [WARNING]: Error in vault password file loading (default): Problem running vault password script
+/root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the
+executable bit from the file.
+
+2023-03-30 20:43:37,934 p=3443 u=root n=ansible | ERROR! Problem running vault password script /root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the executable bit from the file.
+2023-03-30 20:44:44,903 p=3450 u=root n=ansible | [WARNING]: Error getting vault password file (default): The vault password file /root/ansible was not
+found
+
+2023-03-30 20:44:44,903 p=3450 u=root n=ansible | ERROR! The vault password file /root/ansible was not found
+2023-03-30 20:45:18,844 p=3457 u=root n=ansible | [WARNING]: Error getting vault password file (default): The vault password file /root/ansible was not
+found
+
+2023-03-30 20:45:18,844 p=3457 u=root n=ansible | ERROR! The vault password file /root/ansible was not found
+2023-03-30 20:45:55,030 p=3460 u=root n=ansible | [WARNING]: Error in vault password file loading (default): Problem running vault password script
+/root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the
+executable bit from the file.
+
+2023-03-30 20:45:55,030 p=3460 u=root n=ansible | ERROR! Problem running vault password script /root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the executable bit from the file.
+2023-03-30 20:47:34,015 p=3465 u=root n=ansible | [WARNING]: Error in vault password file loading (default): Problem running vault password script
+/root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the
+executable bit from the file.
+
+2023-03-30 20:47:34,015 p=3465 u=root n=ansible | ERROR! Problem running vault password script /root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the executable bit from the file.
+2023-03-30 20:48:26,473 p=3472 u=root n=ansible | [WARNING]: Error in vault password file loading (default): Problem running vault password script
+/root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the
+executable bit from the file.
+
+2023-03-30 20:48:26,473 p=3472 u=root n=ansible | ERROR! Problem running vault password script /root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the executable bit from the file.
+2023-03-30 20:49:39,210 p=3499 u=root n=ansible | [WARNING]: Error in vault password file loading (default): Problem running vault password script
+/root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the
+executable bit from the file.
+
+2023-03-30 20:49:39,210 p=3499 u=root n=ansible | ERROR! Problem running vault password script /root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the executable bit from the file.
+2023-03-30 20:49:52,411 p=3502 u=root n=ansible | [WARNING]: Error in vault password file loading (default): Problem running vault password script
+/root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the
+executable bit from the file.
+
+2023-03-30 20:49:52,411 p=3502 u=root n=ansible | ERROR! Problem running vault password script /root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the executable bit from the file.
+2023-03-30 20:50:59,826 p=3505 u=root n=ansible | [WARNING]: Error in vault password file loading (default): Problem running vault password script
+/root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the
+executable bit from the file.
+
+2023-03-30 20:50:59,826 p=3505 u=root n=ansible | ERROR! Problem running vault password script /root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the executable bit from the file.
+2023-03-30 20:51:31,779 p=3515 u=root n=ansible | [WARNING]: Error in vault password file loading (default): Problem running vault password script
+/root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the
+executable bit from the file.
+
+2023-03-30 20:51:31,780 p=3515 u=root n=ansible | ERROR! Problem running vault password script /root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the executable bit from the file.
+2023-03-30 20:52:01,023 p=3525 u=root n=ansible | [WARNING]: Error in vault password file loading (default): Problem running vault password script
+/root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the
+executable bit from the file.
+
+2023-03-30 20:52:01,024 p=3525 u=root n=ansible | ERROR! Problem running vault password script /root/.ansible ([Errno 13] Permission denied: '/root/.ansible'). If this is not a script, remove the executable bit from the file.
+2023-03-30 20:54:46,400 p=3535 u=root n=ansible | [WARNING]:  * Failed to parse /etc/ansible/inventory with yaml plugin: We were unable to read either
+as JSON nor YAML, these are the errors we got from each: JSON: Expecting value: line 1 column 3 (char
+2)  Syntax Error while loading YAML.   did not find expected <document start>  The error appears to
+be in '/etc/ansible/inventory': line 2, column 1, but may be elsewhere in the file depending on the
+exact syntax problem.  The offending line appears to be:  [ CLIENT ] 192.168.73.175 ^ here
+
+2023-03-30 20:54:46,400 p=3535 u=root n=ansible | [WARNING]:  * Failed to parse /etc/ansible/inventory with ini plugin: /etc/ansible/inventory:1:
+Invalid section entry: '[ CLIENT ]'. Please make sure that there are no spaces in the section entry,
+and that there are no other invalid characters
+
+2023-03-30 20:54:46,400 p=3535 u=root n=ansible | [WARNING]: Unable to parse /etc/ansible/inventory as an inventory source
+
+2023-03-30 20:54:46,401 p=3535 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-03-30 20:54:46,404 p=3535 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit
+localhost does not match 'all'
+
+2023-03-30 20:54:46,574 p=3535 u=root n=ansible | ERROR! conflicting action statements: ansible.builtin.apt, state
+
+The error appears to be in '/etc/ansible/roles/apache2/tasks/main.yml': line 4, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Installation Apache2
+  ^ here
+
+2023-03-30 20:55:40,093 p=3554 u=root n=ansible | [WARNING]:  * Failed to parse /etc/ansible/inventory with yaml plugin: We were unable to read either
+as JSON nor YAML, these are the errors we got from each: JSON: Expecting value: line 1 column 3 (char
+2)  Syntax Error while loading YAML.   did not find expected <document start>  The error appears to
+be in '/etc/ansible/inventory': line 2, column 1, but may be elsewhere in the file depending on the
+exact syntax problem.  The offending line appears to be:  [ CLIENT ] 192.168.73.175 ^ here
+
+2023-03-30 20:55:40,094 p=3554 u=root n=ansible | [WARNING]:  * Failed to parse /etc/ansible/inventory with ini plugin: /etc/ansible/inventory:1:
+Invalid section entry: '[ CLIENT ]'. Please make sure that there are no spaces in the section entry,
+and that there are no other invalid characters
+
+2023-03-30 20:55:40,094 p=3554 u=root n=ansible | [WARNING]: Unable to parse /etc/ansible/inventory as an inventory source
+
+2023-03-30 20:55:40,095 p=3554 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-03-30 20:55:40,099 p=3554 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit
+localhost does not match 'all'
+
+2023-03-30 20:55:40,271 p=3554 u=root n=ansible | ERROR! conflicting action statements: ansible.builtin.apt, state
+
+The error appears to be in '/etc/ansible/roles/apache2/tasks/main.yml': line 4, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Installation Apache2
+  ^ here
+
+2023-03-30 20:56:18,437 p=3558 u=root n=ansible | ERROR! conflicting action statements: ansible.builtin.apt, state
+
+The error appears to be in '/etc/ansible/roles/apache2/tasks/main.yml': line 4, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Installation Apache2
+  ^ here
+
+2023-03-30 20:58:44,237 p=3586 u=root n=ansible | ERROR! conflicting action statements: ansible.builtin.apt, state
+
+The error appears to be in '/etc/ansible/roles/apache2/tasks/main.yml': line 4, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Installation Apache2
+  ^ here
+
+2023-03-30 20:59:57,056 p=3591 u=root n=ansible | ERROR! conflicting action statements: uri, status_code
+
+The error appears to be in '/etc/ansible/roles/apache2/tasks/main.yml': line 25, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Vérifier que l’URL répond"
+  ^ here
+
+2023-03-30 21:01:09,608 p=3595 u=root n=ansible | ERROR! conflicting action statements: uri, status_code
+
+The error appears to be in '/etc/ansible/roles/apache2/tasks/main.yml': line 25, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Vérifier que l’URL répond"
+  ^ here
+
+2023-03-30 21:02:12,909 p=3599 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:02:12,943 p=3599 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:02:15,148 p=3599 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:02:15,227 p=3599 u=root n=ansible | TASK [apache2 : Installation Apache2] ****************************************************************
+2023-03-30 21:02:32,084 p=3599 u=root n=ansible | changed: [192.168.73.175]
+2023-03-30 21:02:32,119 p=3599 u=root n=ansible | TASK [apache2 : show result_apache2] *****************************************************************
+2023-03-30 21:02:32,172 p=3599 u=root n=ansible | ok: [192.168.73.175] => {
+    "result_apache2": {
+        "cache_update_time": 1680203951,
+        "cache_updated": false,
+        "changed": true,
+        "diff": {},
+        "failed": false,
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nThe following additional packages will be installed:\n  apache2-bin apache2-data apache2-utils bzip2 libapr1 libaprutil1\n  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.3-0 mailcap mime-support\n  ssl-cert\nSuggested packages:\n  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser\n  bzip2-doc\nThe following NEW packages will be installed:\n  apache2 apache2-bin apache2-data apache2-utils bzip2 libapr1 libaprutil1\n  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.3-0 mailcap mime-support\n  ssl-cert\n0 upgraded, 13 newly installed, 0 to remove and 27 not upgraded.\nNeed to get 2138 kB of archives.\nAfter this operation, 8505 kB of additional disk space will be used.\nGet:1 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libapr1 amd64 1.7.0-8ubuntu0.22.04.1 [108 kB]\nGet:2 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libaprutil1 amd64 1.6.1-5ubuntu4.22.04.1 [92.6 kB]\nGet:3 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.1-5ubuntu4.22.04.1 [11.3 kB]\nGet:4 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libaprutil1-ldap amd64 1.6.1-5ubuntu4.22.04.1 [9168 B]\nGet:5 http://fr.archive.ubuntu.com/ubuntu jammy/main amd64 liblua5.3-0 amd64 5.3.6-1build1 [140 kB]\nGet:6 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2-bin amd64 2.4.52-1ubuntu4.4 [1345 kB]\nGet:7 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2-data all 2.4.52-1ubuntu4.4 [165 kB]\nGet:8 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2-utils amd64 2.4.52-1ubuntu4.4 [89.5 kB]\nGet:9 http://fr.archive.ubuntu.com/ubuntu jammy/main amd64 mailcap all 3.70+nmu1ubuntu1 [23.8 kB]\nGet:10 http://fr.archive.ubuntu.com/ubuntu jammy/main amd64 mime-support all 3.66 [3696 B]\nGet:11 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2 amd64 2.4.52-1ubuntu4.4 [97.8 kB]\nGet:12 http://fr.archive.ubuntu.com/ubuntu jammy/main amd64 bzip2 amd64 1.0.8-5build1 [34.8 kB]\nGet:13 http://fr.archive.ubuntu.com/ubuntu jammy/main amd64 ssl-cert all 1.1.2 [17.4 kB]\nPreconfiguring packages ...\nFetched 2138 kB in 3s (648 kB/s)\nSelecting previously unselected package libapr1:amd64.\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 73956 files and directories currently installed.)\r\nPreparing to unpack .../00-libapr1_1.7.0-8ubuntu0.22.04.1_amd64.deb ...\r\nUnpacking libapr1:amd64 (1.7.0-8ubuntu0.22.04.1) ...\r\nSelecting previously unselected package libaprutil1:amd64.\r\nPreparing to unpack .../01-libaprutil1_1.6.1-5ubuntu4.22.04.1_amd64.deb ...\r\nUnpacking libaprutil1:amd64 (1.6.1-5ubuntu4.22.04.1) ...\r\nSelecting previously unselected package libaprutil1-dbd-sqlite3:amd64.\r\nPreparing to unpack .../02-libaprutil1-dbd-sqlite3_1.6.1-5ubuntu4.22.04.1_amd64.deb ...\r\nUnpacking libaprutil1-dbd-sqlite3:amd64 (1.6.1-5ubuntu4.22.04.1) ...\r\nSelecting previously unselected package libaprutil1-ldap:amd64.\r\nPreparing to unpack .../03-libaprutil1-ldap_1.6.1-5ubuntu4.22.04.1_amd64.deb ...\r\nUnpacking libaprutil1-ldap:amd64 (1.6.1-5ubuntu4.22.04.1) ...\r\nSelecting previously unselected package liblua5.3-0:amd64.\r\nPreparing to unpack .../04-liblua5.3-0_5.3.6-1build1_amd64.deb ...\r\nUnpacking liblua5.3-0:amd64 (5.3.6-1build1) ...\r\nSelecting previously unselected package apache2-bin.\r\nPreparing to unpack .../05-apache2-bin_2.4.52-1ubuntu4.4_amd64.deb ...\r\nUnpacking apache2-bin (2.4.52-1ubuntu4.4) ...\r\nSelecting previously unselected package apache2-data.\r\nPreparing to unpack .../06-apache2-data_2.4.52-1ubuntu4.4_all.deb ...\r\nUnpacking apache2-data (2.4.52-1ubuntu4.4) ...\r\nSelecting previously unselected package apache2-utils.\r\nPreparing to unpack .../07-apache2-utils_2.4.52-1ubuntu4.4_amd64.deb ...\r\nUnpacking apache2-utils (2.4.52-1ubuntu4.4) ...\r\nSelecting previously unselected package mailcap.\r\nPreparing to unpack .../08-mailcap_3.70+nmu1ubuntu1_all.deb ...\r\nUnpacking mailcap (3.70+nmu1ubuntu1) ...\r\nSelecting previously unselected package mime-support.\r\nPreparing to unpack .../09-mime-support_3.66_all.deb ...\r\nUnpacking mime-support (3.66) ...\r\nSelecting previously unselected package apache2.\r\nPreparing to unpack .../10-apache2_2.4.52-1ubuntu4.4_amd64.deb ...\r\nUnpacking apache2 (2.4.52-1ubuntu4.4) ...\r\nSelecting previously unselected package bzip2.\r\nPreparing to unpack .../11-bzip2_1.0.8-5build1_amd64.deb ...\r\nUnpacking bzip2 (1.0.8-5build1) ...\r\nSelecting previously unselected package ssl-cert.\r\nPreparing to unpack .../12-ssl-cert_1.1.2_all.deb ...\r\nUnpacking ssl-cert (1.1.2) ...\r\nSetting up libapr1:amd64 (1.7.0-8ubuntu0.22.04.1) ...\r\nSetting up bzip2 (1.0.8-5build1) ...\r\nSetting up ssl-cert (1.1.2) ...\r\nSetting up liblua5.3-0:amd64 (5.3.6-1build1) ...\r\nSetting up apache2-data (2.4.52-1ubuntu4.4) ...\r\nSetting up mailcap (3.70+nmu1ubuntu1) ...\r\nSetting up libaprutil1:amd64 (1.6.1-5ubuntu4.22.04.1) ...\r\nSetting up mime-support (3.66) ...\r\nSetting up libaprutil1-ldap:amd64 (1.6.1-5ubuntu4.22.04.1) ...\r\nSetting up libaprutil1-dbd-sqlite3:amd64 (1.6.1-5ubuntu4.22.04.1) ...\r\nSetting up apache2-utils (2.4.52-1ubuntu4.4) ...\r\nSetting up apache2-bin (2.4.52-1ubuntu4.4) ...\r\nSetting up apache2 (2.4.52-1ubuntu4.4) ...\r\nEnabling module mpm_event.\r\nEnabling module authz_core.\r\nEnabling module authz_host.\r\nEnabling module authn_core.\r\nEnabling module auth_basic.\r\nEnabling module access_compat.\r\nEnabling module authn_file.\r\nEnabling module authz_user.\r\nEnabling module alias.\r\nEnabling module dir.\r\nEnabling module autoindex.\r\nEnabling module env.\r\nEnabling module mime.\r\nEnabling module negotiation.\r\nEnabling module setenvif.\r\nEnabling module filter.\r\nEnabling module deflate.\r\nEnabling module status.\r\nEnabling module reqtimeout.\r\nEnabling conf charset.\r\nEnabling conf localized-error-pages.\r\nEnabling conf other-vhosts-access-log.\r\nEnabling conf security.\r\nEnabling conf serve-cgi-bin.\r\nEnabling site 000-default.\r\nCreated symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.\r\nCreated symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.\r\nProcessing triggers for ufw (0.36.1-4build1) ...\r\nProcessing triggers for man-db (2.10.2-1) ...\r\nProcessing triggers for libc-bin (2.35-0ubuntu3.1) ...\r\nNEEDRESTART-VER: 3.5\nNEEDRESTART-KCUR: 5.15.0-69-generic\nNEEDRESTART-KEXP: 5.15.0-69-generic\nNEEDRESTART-KSTA: 1\n",
+        "stdout_lines": [
+            "Reading package lists...",
+            "Building dependency tree...",
+            "Reading state information...",
+            "The following additional packages will be installed:",
+            "  apache2-bin apache2-data apache2-utils bzip2 libapr1 libaprutil1",
+            "  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.3-0 mailcap mime-support",
+            "  ssl-cert",
+            "Suggested packages:",
+            "  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser",
+            "  bzip2-doc",
+            "The following NEW packages will be installed:",
+            "  apache2 apache2-bin apache2-data apache2-utils bzip2 libapr1 libaprutil1",
+            "  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.3-0 mailcap mime-support",
+            "  ssl-cert",
+            "0 upgraded, 13 newly installed, 0 to remove and 27 not upgraded.",
+            "Need to get 2138 kB of archives.",
+            "After this operation, 8505 kB of additional disk space will be used.",
+            "Get:1 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libapr1 amd64 1.7.0-8ubuntu0.22.04.1 [108 kB]",
+            "Get:2 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libaprutil1 amd64 1.6.1-5ubuntu4.22.04.1 [92.6 kB]",
+            "Get:3 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.1-5ubuntu4.22.04.1 [11.3 kB]",
+            "Get:4 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libaprutil1-ldap amd64 1.6.1-5ubuntu4.22.04.1 [9168 B]",
+            "Get:5 http://fr.archive.ubuntu.com/ubuntu jammy/main amd64 liblua5.3-0 amd64 5.3.6-1build1 [140 kB]",
+            "Get:6 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2-bin amd64 2.4.52-1ubuntu4.4 [1345 kB]",
+            "Get:7 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2-data all 2.4.52-1ubuntu4.4 [165 kB]",
+            "Get:8 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2-utils amd64 2.4.52-1ubuntu4.4 [89.5 kB]",
+            "Get:9 http://fr.archive.ubuntu.com/ubuntu jammy/main amd64 mailcap all 3.70+nmu1ubuntu1 [23.8 kB]",
+            "Get:10 http://fr.archive.ubuntu.com/ubuntu jammy/main amd64 mime-support all 3.66 [3696 B]",
+            "Get:11 http://fr.archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2 amd64 2.4.52-1ubuntu4.4 [97.8 kB]",
+            "Get:12 http://fr.archive.ubuntu.com/ubuntu jammy/main amd64 bzip2 amd64 1.0.8-5build1 [34.8 kB]",
+            "Get:13 http://fr.archive.ubuntu.com/ubuntu jammy/main amd64 ssl-cert all 1.1.2 [17.4 kB]",
+            "Preconfiguring packages ...",
+            "Fetched 2138 kB in 3s (648 kB/s)",
+            "Selecting previously unselected package libapr1:amd64.",
+            "(Reading database ... ",
+            "(Reading database ... 5%",
+            "(Reading database ... 10%",
+            "(Reading database ... 15%",
+            "(Reading database ... 20%",
+            "(Reading database ... 25%",
+            "(Reading database ... 30%",
+            "(Reading database ... 35%",
+            "(Reading database ... 40%",
+            "(Reading database ... 45%",
+            "(Reading database ... 50%",
+            "(Reading database ... 55%",
+            "(Reading database ... 60%",
+            "(Reading database ... 65%",
+            "(Reading database ... 70%",
+            "(Reading database ... 75%",
+            "(Reading database ... 80%",
+            "(Reading database ... 85%",
+            "(Reading database ... 90%",
+            "(Reading database ... 95%",
+            "(Reading database ... 100%",
+            "(Reading database ... 73956 files and directories currently installed.)",
+            "Preparing to unpack .../00-libapr1_1.7.0-8ubuntu0.22.04.1_amd64.deb ...",
+            "Unpacking libapr1:amd64 (1.7.0-8ubuntu0.22.04.1) ...",
+            "Selecting previously unselected package libaprutil1:amd64.",
+            "Preparing to unpack .../01-libaprutil1_1.6.1-5ubuntu4.22.04.1_amd64.deb ...",
+            "Unpacking libaprutil1:amd64 (1.6.1-5ubuntu4.22.04.1) ...",
+            "Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.",
+            "Preparing to unpack .../02-libaprutil1-dbd-sqlite3_1.6.1-5ubuntu4.22.04.1_amd64.deb ...",
+            "Unpacking libaprutil1-dbd-sqlite3:amd64 (1.6.1-5ubuntu4.22.04.1) ...",
+            "Selecting previously unselected package libaprutil1-ldap:amd64.",
+            "Preparing to unpack .../03-libaprutil1-ldap_1.6.1-5ubuntu4.22.04.1_amd64.deb ...",
+            "Unpacking libaprutil1-ldap:amd64 (1.6.1-5ubuntu4.22.04.1) ...",
+            "Selecting previously unselected package liblua5.3-0:amd64.",
+            "Preparing to unpack .../04-liblua5.3-0_5.3.6-1build1_amd64.deb ...",
+            "Unpacking liblua5.3-0:amd64 (5.3.6-1build1) ...",
+            "Selecting previously unselected package apache2-bin.",
+            "Preparing to unpack .../05-apache2-bin_2.4.52-1ubuntu4.4_amd64.deb ...",
+            "Unpacking apache2-bin (2.4.52-1ubuntu4.4) ...",
+            "Selecting previously unselected package apache2-data.",
+            "Preparing to unpack .../06-apache2-data_2.4.52-1ubuntu4.4_all.deb ...",
+            "Unpacking apache2-data (2.4.52-1ubuntu4.4) ...",
+            "Selecting previously unselected package apache2-utils.",
+            "Preparing to unpack .../07-apache2-utils_2.4.52-1ubuntu4.4_amd64.deb ...",
+            "Unpacking apache2-utils (2.4.52-1ubuntu4.4) ...",
+            "Selecting previously unselected package mailcap.",
+            "Preparing to unpack .../08-mailcap_3.70+nmu1ubuntu1_all.deb ...",
+            "Unpacking mailcap (3.70+nmu1ubuntu1) ...",
+            "Selecting previously unselected package mime-support.",
+            "Preparing to unpack .../09-mime-support_3.66_all.deb ...",
+            "Unpacking mime-support (3.66) ...",
+            "Selecting previously unselected package apache2.",
+            "Preparing to unpack .../10-apache2_2.4.52-1ubuntu4.4_amd64.deb ...",
+            "Unpacking apache2 (2.4.52-1ubuntu4.4) ...",
+            "Selecting previously unselected package bzip2.",
+            "Preparing to unpack .../11-bzip2_1.0.8-5build1_amd64.deb ...",
+            "Unpacking bzip2 (1.0.8-5build1) ...",
+            "Selecting previously unselected package ssl-cert.",
+            "Preparing to unpack .../12-ssl-cert_1.1.2_all.deb ...",
+            "Unpacking ssl-cert (1.1.2) ...",
+            "Setting up libapr1:amd64 (1.7.0-8ubuntu0.22.04.1) ...",
+            "Setting up bzip2 (1.0.8-5build1) ...",
+            "Setting up ssl-cert (1.1.2) ...",
+            "Setting up liblua5.3-0:amd64 (5.3.6-1build1) ...",
+            "Setting up apache2-data (2.4.52-1ubuntu4.4) ...",
+            "Setting up mailcap (3.70+nmu1ubuntu1) ...",
+            "Setting up libaprutil1:amd64 (1.6.1-5ubuntu4.22.04.1) ...",
+            "Setting up mime-support (3.66) ...",
+            "Setting up libaprutil1-ldap:amd64 (1.6.1-5ubuntu4.22.04.1) ...",
+            "Setting up libaprutil1-dbd-sqlite3:amd64 (1.6.1-5ubuntu4.22.04.1) ...",
+            "Setting up apache2-utils (2.4.52-1ubuntu4.4) ...",
+            "Setting up apache2-bin (2.4.52-1ubuntu4.4) ...",
+            "Setting up apache2 (2.4.52-1ubuntu4.4) ...",
+            "Enabling module mpm_event.",
+            "Enabling module authz_core.",
+            "Enabling module authz_host.",
+            "Enabling module authn_core.",
+            "Enabling module auth_basic.",
+            "Enabling module access_compat.",
+            "Enabling module authn_file.",
+            "Enabling module authz_user.",
+            "Enabling module alias.",
+            "Enabling module dir.",
+            "Enabling module autoindex.",
+            "Enabling module env.",
+            "Enabling module mime.",
+            "Enabling module negotiation.",
+            "Enabling module setenvif.",
+            "Enabling module filter.",
+            "Enabling module deflate.",
+            "Enabling module status.",
+            "Enabling module reqtimeout.",
+            "Enabling conf charset.",
+            "Enabling conf localized-error-pages.",
+            "Enabling conf other-vhosts-access-log.",
+            "Enabling conf security.",
+            "Enabling conf serve-cgi-bin.",
+            "Enabling site 000-default.",
+            "Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.",
+            "Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.",
+            "Processing triggers for ufw (0.36.1-4build1) ...",
+            "Processing triggers for man-db (2.10.2-1) ...",
+            "Processing triggers for libc-bin (2.35-0ubuntu3.1) ...",
+            "NEEDRESTART-VER: 3.5",
+            "NEEDRESTART-KCUR: 5.15.0-69-generic",
+            "NEEDRESTART-KEXP: 5.15.0-69-generic",
+            "NEEDRESTART-KSTA: 1"
+        ]
+    }
+}
+2023-03-30 21:02:32,219 p=3599 u=root n=ansible | TASK [apache2 : Already installed] *******************************************************************
+2023-03-30 21:02:32,254 p=3599 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:02:32,291 p=3599 u=root n=ansible | TASK [apache2 : Restart Apache2] *********************************************************************
+2023-03-30 21:02:33,157 p=3599 u=root n=ansible | changed: [192.168.73.175]
+2023-03-30 21:02:33,187 p=3599 u=root n=ansible | TASK [apache2 : Vérifier que l’URL répond] ***********************************************************
+2023-03-30 21:02:33,724 p=3599 u=root n=ansible | fatal: [192.168.73.175]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (ansible.legacy.uri) module: register. Supported parameters include: attributes, body, body_format, ca_path, ciphers, client_cert, client_key, creates, decompress, dest, follow_redirects, force, force_basic_auth, group, headers, http_agent, method, mode, owner, remote_src, removes, return_content, selevel, serole, setype, seuser, src, status_code, timeout, unix_socket, unredirected_headers, unsafe_writes, url, url_password, url_username, use_gssapi, use_netrc, use_proxy, validate_certs (attr, password, user)."}
+2023-03-30 21:02:33,724 p=3599 u=root n=ansible | ...ignoring
+2023-03-30 21:02:33,751 p=3599 u=root n=ansible | TASK [apache2 : Message de debug] ********************************************************************
+2023-03-30 21:02:33,768 p=3599 u=root n=ansible | fatal: [192.168.73.175]: FAILED! => {"msg": "The conditional check 'result.status == 200' failed. The error was: error while evaluating conditional (result.status == 200): 'result' is undefined. 'result' is undefined\n\nThe error appears to be in '/etc/ansible/roles/apache2/tasks/main.yml': line 34, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: \"Message de debug\"\n  ^ here\n"}
+2023-03-30 21:02:33,770 p=3599 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:02:33,770 p=3599 u=root n=ansible | 192.168.73.175             : ok=5    changed=2    unreachable=0    failed=1    skipped=1    rescued=0    ignored=1   
+2023-03-30 21:04:07,003 p=3654 u=root n=ansible | ERROR! conflicting action statements: ansible.builtin.uri, return_content
+
+The error appears to be in '/etc/ansible/roles/apache2/tasks/main.yml': line 25, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Vérifier que l’URL répond"
+  ^ here
+
+2023-03-30 21:04:20,391 p=3658 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:04:20,421 p=3658 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:04:22,302 p=3658 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:04:22,397 p=3658 u=root n=ansible | TASK [apache2 : Installation Apache2] ****************************************************************
+2023-03-30 21:04:24,206 p=3658 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:04:24,237 p=3658 u=root n=ansible | TASK [apache2 : show result_apache2] *****************************************************************
+2023-03-30 21:04:24,269 p=3658 u=root n=ansible | ok: [192.168.73.175] => {
+    "result_apache2": {
+        "cache_update_time": 1680203951,
+        "cache_updated": false,
+        "changed": false,
+        "failed": false
+    }
+}
+2023-03-30 21:04:24,310 p=3658 u=root n=ansible | TASK [apache2 : Already installed] *******************************************************************
+2023-03-30 21:04:24,366 p=3658 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "Apache2 is already installed"
+}
+2023-03-30 21:04:24,417 p=3658 u=root n=ansible | TASK [apache2 : Restart Apache2] *********************************************************************
+2023-03-30 21:04:24,450 p=3658 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:04:24,499 p=3658 u=root n=ansible | TASK [apache2 : Vérifier que l’URL répond] ***********************************************************
+2023-03-30 21:04:25,102 p=3658 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:04:25,133 p=3658 u=root n=ansible | TASK [apache2 : Message de debug] ********************************************************************
+2023-03-30 21:04:25,192 p=3658 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "L’URL répond"
+}
+2023-03-30 21:04:25,232 p=3658 u=root n=ansible | TASK [apache2 : Message d’erreur] ********************************************************************
+2023-03-30 21:04:25,266 p=3658 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:04:25,458 p=3658 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:04:25,459 p=3658 u=root n=ansible | 192.168.73.175             : ok=6    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-03-30 21:06:16,759 p=3705 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:06:16,790 p=3705 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:06:18,620 p=3705 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:06:18,714 p=3705 u=root n=ansible | TASK [apache2 : Installation Apache2] ****************************************************************
+2023-03-30 21:06:19,962 p=3705 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:06:19,991 p=3705 u=root n=ansible | TASK [apache2 : show result_apache2] *****************************************************************
+2023-03-30 21:06:20,055 p=3705 u=root n=ansible | ok: [192.168.73.175] => {
+    "result_apache2": {
+        "cache_update_time": 1680203951,
+        "cache_updated": false,
+        "changed": false,
+        "failed": false
+    }
+}
+2023-03-30 21:06:20,106 p=3705 u=root n=ansible | TASK [apache2 : Already installed] *******************************************************************
+2023-03-30 21:06:20,163 p=3705 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "Apache2 is already installed"
+}
+2023-03-30 21:06:20,209 p=3705 u=root n=ansible | TASK [apache2 : Restart Apache2] *********************************************************************
+2023-03-30 21:06:20,254 p=3705 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:06:20,301 p=3705 u=root n=ansible | TASK [apache2 : Vérifier que l’URL répond] ***********************************************************
+2023-03-30 21:06:20,901 p=3705 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:06:20,929 p=3705 u=root n=ansible | TASK [apache2 : Message de debug] ********************************************************************
+2023-03-30 21:06:20,966 p=3705 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "L’URL répond"
+}
+2023-03-30 21:06:21,008 p=3705 u=root n=ansible | TASK [apache2 : Message d’erreur] ********************************************************************
+2023-03-30 21:06:21,032 p=3705 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:06:21,204 p=3705 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:06:21,204 p=3705 u=root n=ansible | 192.168.73.175             : ok=6    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-03-30 21:06:38,412 p=3752 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:06:38,439 p=3752 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:06:39,750 p=3752 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:06:39,839 p=3752 u=root n=ansible | TASK [apache2 : Installation Apache2] ****************************************************************
+2023-03-30 21:06:40,845 p=3752 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:06:40,874 p=3752 u=root n=ansible | TASK [apache2 : show result_apache2] *****************************************************************
+2023-03-30 21:06:40,907 p=3752 u=root n=ansible | ok: [192.168.73.175] => {
+    "result_apache2": {
+        "cache_update_time": 1680203951,
+        "cache_updated": false,
+        "changed": false,
+        "failed": false
+    }
+}
+2023-03-30 21:06:40,957 p=3752 u=root n=ansible | TASK [apache2 : Already installed] *******************************************************************
+2023-03-30 21:06:41,026 p=3752 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "Apache2 is already installed"
+}
+2023-03-30 21:06:41,075 p=3752 u=root n=ansible | TASK [apache2 : Restart Apache2] *********************************************************************
+2023-03-30 21:06:41,115 p=3752 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:06:41,162 p=3752 u=root n=ansible | TASK [apache2 : Vérifier que l’URL répond] ***********************************************************
+2023-03-30 21:06:41,724 p=3752 u=root n=ansible | fatal: [192.168.73.175]: FAILED! => {"changed": false, "content": "", "elapsed": 0, "msg": "Status code was -1 and not [200]: Request failed: <urlopen error [Errno 111] Connection refused>", "redirected": false, "status": -1, "url": "http://localhost"}
+2023-03-30 21:06:41,724 p=3752 u=root n=ansible | ...ignoring
+2023-03-30 21:06:41,753 p=3752 u=root n=ansible | TASK [apache2 : Message de debug] ********************************************************************
+2023-03-30 21:06:41,781 p=3752 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:06:41,822 p=3752 u=root n=ansible | TASK [apache2 : Message d’erreur] ********************************************************************
+2023-03-30 21:06:41,880 p=3752 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "L’URL ne répond pas"
+}
+2023-03-30 21:06:42,082 p=3752 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:06:42,083 p=3752 u=root n=ansible | 192.168.73.175             : ok=6    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=1   
+2023-03-30 21:12:07,085 p=3801 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:12:07,116 p=3801 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:12:09,097 p=3801 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:12:09,188 p=3801 u=root n=ansible | TASK [apache2 : Installation Apache2] ****************************************************************
+2023-03-30 21:12:10,244 p=3801 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:12:10,274 p=3801 u=root n=ansible | TASK [apache2 : show result_apache2] *****************************************************************
+2023-03-30 21:12:10,314 p=3801 u=root n=ansible | ok: [192.168.73.175] => {
+    "result_apache2": {
+        "cache_update_time": 1680203951,
+        "cache_updated": false,
+        "changed": false,
+        "failed": false
+    }
+}
+2023-03-30 21:12:10,351 p=3801 u=root n=ansible | TASK [apache2 : Already installed] *******************************************************************
+2023-03-30 21:12:10,416 p=3801 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "Apache2 is already installed"
+}
+2023-03-30 21:12:10,462 p=3801 u=root n=ansible | TASK [apache2 : Restart Apache2] *********************************************************************
+2023-03-30 21:12:10,504 p=3801 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:12:10,547 p=3801 u=root n=ansible | TASK [apache2 : Vérifier que l’URL répond] ***********************************************************
+2023-03-30 21:12:11,149 p=3801 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:12:11,181 p=3801 u=root n=ansible | TASK [apache2 : Message de debug] ********************************************************************
+2023-03-30 21:12:11,229 p=3801 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:12:11,270 p=3801 u=root n=ansible | TASK [apache2 : Message d’erreur] ********************************************************************
+2023-03-30 21:12:11,313 p=3801 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "L’URL ne répond pas"
+}
+2023-03-30 21:12:11,513 p=3801 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:12:11,513 p=3801 u=root n=ansible | 192.168.73.175             : ok=6    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-03-30 21:13:18,252 p=3849 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:13:18,282 p=3849 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:13:20,025 p=3849 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:13:20,118 p=3849 u=root n=ansible | TASK [apache2 : Installation Apache2] ****************************************************************
+2023-03-30 21:13:21,131 p=3849 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:13:21,177 p=3849 u=root n=ansible | TASK [apache2 : show result_apache2] *****************************************************************
+2023-03-30 21:13:21,218 p=3849 u=root n=ansible | ok: [192.168.73.175] => {
+    "result_apache2": {
+        "cache_update_time": 1680203951,
+        "cache_updated": false,
+        "changed": false,
+        "failed": false
+    }
+}
+2023-03-30 21:13:21,267 p=3849 u=root n=ansible | TASK [apache2 : Already installed] *******************************************************************
+2023-03-30 21:13:21,322 p=3849 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "Apache2 is already installed"
+}
+2023-03-30 21:13:21,366 p=3849 u=root n=ansible | TASK [apache2 : Restart Apache2] *********************************************************************
+2023-03-30 21:13:21,410 p=3849 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:13:21,456 p=3849 u=root n=ansible | TASK [apache2 : Vérifier que l’URL répond] ***********************************************************
+2023-03-30 21:13:22,070 p=3849 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:13:22,099 p=3849 u=root n=ansible | TASK [apache2 : Message de debug] ********************************************************************
+2023-03-30 21:13:22,120 p=3849 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:13:22,158 p=3849 u=root n=ansible | TASK [apache2 : Message d’erreur] ********************************************************************
+2023-03-30 21:13:22,211 p=3849 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "L’URL ne répond pas"
+}
+2023-03-30 21:13:22,257 p=3849 u=root n=ansible | TASK [apache2 : Redémarrer le service apache2] *******************************************************
+2023-03-30 21:13:23,058 p=3849 u=root n=ansible | changed: [192.168.73.175]
+2023-03-30 21:13:23,205 p=3849 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:13:23,206 p=3849 u=root n=ansible | 192.168.73.175             : ok=7    changed=1    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-03-30 21:14:12,608 p=3906 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:14:12,638 p=3906 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:14:14,175 p=3906 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:14:14,256 p=3906 u=root n=ansible | TASK [apache2 : Installation Apache2] ****************************************************************
+2023-03-30 21:14:15,706 p=3906 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:14:15,736 p=3906 u=root n=ansible | TASK [apache2 : show result_apache2] *****************************************************************
+2023-03-30 21:14:15,760 p=3906 u=root n=ansible | ok: [192.168.73.175] => {
+    "result_apache2": {
+        "cache_update_time": 1680203951,
+        "cache_updated": false,
+        "changed": false,
+        "failed": false
+    }
+}
+2023-03-30 21:14:15,788 p=3906 u=root n=ansible | TASK [apache2 : Already installed] *******************************************************************
+2023-03-30 21:14:15,812 p=3906 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "Apache2 is already installed"
+}
+2023-03-30 21:14:15,842 p=3906 u=root n=ansible | TASK [apache2 : Restart Apache2] *********************************************************************
+2023-03-30 21:14:15,859 p=3906 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:14:15,887 p=3906 u=root n=ansible | TASK [apache2 : Vérifier que l’URL répond] ***********************************************************
+2023-03-30 21:14:16,442 p=3906 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:14:16,472 p=3906 u=root n=ansible | TASK [apache2 : Message de debug] ********************************************************************
+2023-03-30 21:14:16,488 p=3906 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:14:16,516 p=3906 u=root n=ansible | TASK [apache2 : Message d’erreur] ********************************************************************
+2023-03-30 21:14:16,540 p=3906 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "L’URL ne répond pas"
+}
+2023-03-30 21:14:16,567 p=3906 u=root n=ansible | TASK [apache2 : Redémarrer le service apache2] *******************************************************
+2023-03-30 21:14:17,343 p=3906 u=root n=ansible | changed: [192.168.73.175]
+2023-03-30 21:14:17,461 p=3906 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:14:17,461 p=3906 u=root n=ansible | 192.168.73.175             : ok=7    changed=1    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-03-30 21:16:56,471 p=3960 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:16:56,500 p=3960 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:16:58,391 p=3960 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:16:58,481 p=3960 u=root n=ansible | TASK [apache2 : Installation Apache2] ****************************************************************
+2023-03-30 21:16:59,512 p=3960 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:16:59,547 p=3960 u=root n=ansible | TASK [apache2 : show result_apache2] *****************************************************************
+2023-03-30 21:16:59,604 p=3960 u=root n=ansible | ok: [192.168.73.175] => {
+    "result_apache2": {
+        "cache_update_time": 1680203951,
+        "cache_updated": false,
+        "changed": false,
+        "failed": false
+    }
+}
+2023-03-30 21:16:59,648 p=3960 u=root n=ansible | TASK [apache2 : Already installed] *******************************************************************
+2023-03-30 21:16:59,701 p=3960 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "Apache2 is already installed"
+}
+2023-03-30 21:16:59,749 p=3960 u=root n=ansible | TASK [apache2 : Restart Apache2] *********************************************************************
+2023-03-30 21:16:59,796 p=3960 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:16:59,841 p=3960 u=root n=ansible | TASK [apache2 : Vérifier que l’URL répond] ***********************************************************
+2023-03-30 21:17:00,455 p=3960 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:17:00,483 p=3960 u=root n=ansible | TASK [apache2 : debug message] ***********************************************************************
+2023-03-30 21:17:00,512 p=3960 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "L’URL répond"
+}
+2023-03-30 21:17:00,555 p=3960 u=root n=ansible | TASK [apache2 : Eror message] ************************************************************************
+2023-03-30 21:17:00,587 p=3960 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:17:00,634 p=3960 u=root n=ansible | TASK [apache2 : Restart service after URL ko] ********************************************************
+2023-03-30 21:17:00,677 p=3960 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:17:00,878 p=3960 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:17:00,879 p=3960 u=root n=ansible | 192.168.73.175             : ok=6    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2023-03-30 21:23:22,664 p=4016 u=root n=ansible | - Role roles/copy was created successfully
+2023-03-30 21:39:41,027 p=4353 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:39:41,058 p=4353 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:39:42,959 p=4353 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:39:43,052 p=4353 u=root n=ansible | TASK [apache2 : Installation Apache2] ****************************************************************
+2023-03-30 21:39:44,088 p=4353 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:39:44,117 p=4353 u=root n=ansible | TASK [apache2 : show result_apache2] *****************************************************************
+2023-03-30 21:39:44,153 p=4353 u=root n=ansible | ok: [192.168.73.175] => {
+    "result_apache2": {
+        "cache_update_time": 1680203951,
+        "cache_updated": false,
+        "changed": false,
+        "failed": false
+    }
+}
+2023-03-30 21:39:44,200 p=4353 u=root n=ansible | TASK [apache2 : Already installed] *******************************************************************
+2023-03-30 21:39:44,237 p=4353 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "Apache2 is already installed"
+}
+2023-03-30 21:39:44,297 p=4353 u=root n=ansible | TASK [apache2 : Restart Apache2] *********************************************************************
+2023-03-30 21:39:44,342 p=4353 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:39:44,390 p=4353 u=root n=ansible | TASK [apache2 : Vérifier que l’URL répond] ***********************************************************
+2023-03-30 21:39:44,988 p=4353 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:39:45,017 p=4353 u=root n=ansible | TASK [apache2 : debug message] ***********************************************************************
+2023-03-30 21:39:45,059 p=4353 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "L’URL répond"
+}
+2023-03-30 21:39:45,105 p=4353 u=root n=ansible | TASK [apache2 : Eror message] ************************************************************************
+2023-03-30 21:39:45,149 p=4353 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:39:45,197 p=4353 u=root n=ansible | TASK [apache2 : Restart service after URL ko] ********************************************************
+2023-03-30 21:39:45,238 p=4353 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:39:45,359 p=4353 u=root n=ansible | TASK [copy : Copier l’image esgi.jpg dans le dossier /var/www/html] **********************************
+2023-03-30 21:39:45,517 p=4353 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-03-30 21:39:45,518 p=4353 u=root n=ansible | fatal: [192.168.73.175]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/ansible/roles/copy/templates/esgi.jpg' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2023-03-30 21:39:45,522 p=4353 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:39:45,523 p=4353 u=root n=ansible | 192.168.73.175             : ok=6    changed=0    unreachable=0    failed=1    skipped=3    rescued=0    ignored=0   
+2023-03-30 21:40:35,122 p=4408 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:40:35,155 p=4408 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:40:36,436 p=4408 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:40:36,525 p=4408 u=root n=ansible | TASK [apache2 : Installation Apache2] ****************************************************************
+2023-03-30 21:40:37,514 p=4408 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:40:37,544 p=4408 u=root n=ansible | TASK [apache2 : show result_apache2] *****************************************************************
+2023-03-30 21:40:37,600 p=4408 u=root n=ansible | ok: [192.168.73.175] => {
+    "result_apache2": {
+        "cache_update_time": 1680203951,
+        "cache_updated": false,
+        "changed": false,
+        "failed": false
+    }
+}
+2023-03-30 21:40:37,636 p=4408 u=root n=ansible | TASK [apache2 : Already installed] *******************************************************************
+2023-03-30 21:40:37,692 p=4408 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "Apache2 is already installed"
+}
+2023-03-30 21:40:37,736 p=4408 u=root n=ansible | TASK [apache2 : Restart Apache2] *********************************************************************
+2023-03-30 21:40:37,776 p=4408 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:40:37,818 p=4408 u=root n=ansible | TASK [apache2 : Vérifier que l’URL répond] ***********************************************************
+2023-03-30 21:40:38,406 p=4408 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:40:38,435 p=4408 u=root n=ansible | TASK [apache2 : debug message] ***********************************************************************
+2023-03-30 21:40:38,463 p=4408 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "L’URL répond"
+}
+2023-03-30 21:40:38,500 p=4408 u=root n=ansible | TASK [apache2 : Eror message] ************************************************************************
+2023-03-30 21:40:38,535 p=4408 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:40:38,573 p=4408 u=root n=ansible | TASK [apache2 : Restart service after URL ko] ********************************************************
+2023-03-30 21:40:38,615 p=4408 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:40:38,698 p=4408 u=root n=ansible | TASK [copy : Copier l’image esgi.jpg dans le dossier /var/www/html] **********************************
+2023-03-30 21:40:38,856 p=4408 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-03-30 21:40:38,857 p=4408 u=root n=ansible | fatal: [192.168.73.175]: FAILED! => {"changed": false, "msg": "Could not find or access '/templates/esgi.jpg' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2023-03-30 21:40:38,860 p=4408 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:40:38,860 p=4408 u=root n=ansible | 192.168.73.175             : ok=6    changed=0    unreachable=0    failed=1    skipped=3    rescued=0    ignored=0   
+2023-03-30 21:40:55,578 p=4460 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:40:55,608 p=4460 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:40:56,927 p=4460 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:40:57,021 p=4460 u=root n=ansible | TASK [apache2 : Installation Apache2] ****************************************************************
+2023-03-30 21:40:58,054 p=4460 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:40:58,083 p=4460 u=root n=ansible | TASK [apache2 : show result_apache2] *****************************************************************
+2023-03-30 21:40:58,125 p=4460 u=root n=ansible | ok: [192.168.73.175] => {
+    "result_apache2": {
+        "cache_update_time": 1680203951,
+        "cache_updated": false,
+        "changed": false,
+        "failed": false
+    }
+}
+2023-03-30 21:40:58,168 p=4460 u=root n=ansible | TASK [apache2 : Already installed] *******************************************************************
+2023-03-30 21:40:58,227 p=4460 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "Apache2 is already installed"
+}
+2023-03-30 21:40:58,273 p=4460 u=root n=ansible | TASK [apache2 : Restart Apache2] *********************************************************************
+2023-03-30 21:40:58,305 p=4460 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:40:58,351 p=4460 u=root n=ansible | TASK [apache2 : Vérifier que l’URL répond] ***********************************************************
+2023-03-30 21:40:58,949 p=4460 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:40:58,977 p=4460 u=root n=ansible | TASK [apache2 : debug message] ***********************************************************************
+2023-03-30 21:40:59,019 p=4460 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "L’URL répond"
+}
+2023-03-30 21:40:59,057 p=4460 u=root n=ansible | TASK [apache2 : Eror message] ************************************************************************
+2023-03-30 21:40:59,095 p=4460 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:40:59,141 p=4460 u=root n=ansible | TASK [apache2 : Restart service after URL ko] ********************************************************
+2023-03-30 21:40:59,173 p=4460 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 21:40:59,256 p=4460 u=root n=ansible | TASK [copy : Copier l’image esgi.jpg dans le dossier /var/www/html] **********************************
+2023-03-30 21:40:59,421 p=4460 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-03-30 21:40:59,423 p=4460 u=root n=ansible | fatal: [192.168.73.175]: FAILED! => {"changed": false, "msg": "Could not find or access 'templates/esgi.jpg'\nSearched in:\n\t/etc/ansible/roles/copy/files/templates/esgi.jpg\n\t/etc/ansible/roles/copy/templates/esgi.jpg\n\t/etc/ansible/roles/copy/tasks/files/templates/esgi.jpg\n\t/etc/ansible/roles/copy/tasks/templates/esgi.jpg\n\t/etc/ansible/files/templates/esgi.jpg\n\t/etc/ansible/templates/esgi.jpg on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2023-03-30 21:40:59,427 p=4460 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:40:59,430 p=4460 u=root n=ansible | 192.168.73.175             : ok=6    changed=0    unreachable=0    failed=1    skipped=3    rescued=0    ignored=0   
+2023-03-30 21:43:09,680 p=4513 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:43:09,711 p=4513 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:43:11,571 p=4513 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:43:11,692 p=4513 u=root n=ansible | TASK [copy : Copier l’image esgi.jpg dans le dossier /var/www/html] **********************************
+2023-03-30 21:43:11,804 p=4513 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-03-30 21:43:11,805 p=4513 u=root n=ansible | fatal: [192.168.73.175]: FAILED! => {"changed": false, "msg": "Could not find or access '/templates/esgi.jpg' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2023-03-30 21:43:11,808 p=4513 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:43:11,808 p=4513 u=root n=ansible | 192.168.73.175             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-30 21:44:47,682 p=4539 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:44:47,711 p=4539 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:44:49,578 p=4539 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:44:49,705 p=4539 u=root n=ansible | TASK [copy : Copier l’image esgi.jpg dans le dossier /var/www/html] **********************************
+2023-03-30 21:44:49,811 p=4539 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-03-30 21:44:49,813 p=4539 u=root n=ansible | fatal: [192.168.73.175]: FAILED! => {"changed": false, "msg": "Could not find or access '/etc/ansible/roles/copy/templates/esgi.jpg' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2023-03-30 21:44:49,816 p=4539 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:44:49,816 p=4539 u=root n=ansible | 192.168.73.175             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-30 21:46:34,909 p=4571 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:46:34,939 p=4571 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:46:36,789 p=4571 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:46:36,907 p=4571 u=root n=ansible | TASK [copy : Copier l’image esgi.jpg dans le dossier /var/www/html] **********************************
+2023-03-30 21:46:37,015 p=4571 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-03-30 21:46:37,016 p=4571 u=root n=ansible | fatal: [192.168.73.175]: FAILED! => {"changed": false, "msg": "Could not find or access 'roles/copy/templates/esgi.jpg'\nSearched in:\n\t/etc/ansible/roles/copy/files/roles/copy/templates/esgi.jpg\n\t/etc/ansible/roles/copy/roles/copy/templates/esgi.jpg\n\t/etc/ansible/roles/copy/tasks/files/roles/copy/templates/esgi.jpg\n\t/etc/ansible/roles/copy/tasks/roles/copy/templates/esgi.jpg\n\t/etc/ansible/files/roles/copy/templates/esgi.jpg\n\t/etc/ansible/roles/copy/templates/esgi.jpg on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2023-03-30 21:46:37,018 p=4571 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:46:37,018 p=4571 u=root n=ansible | 192.168.73.175             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-30 21:46:54,777 p=4596 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:46:54,806 p=4596 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:46:56,081 p=4596 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:46:56,193 p=4596 u=root n=ansible | TASK [copy : Copier l’image esgi.jpg dans le dossier /var/www/html] **********************************
+2023-03-30 21:46:56,334 p=4596 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-03-30 21:46:56,334 p=4596 u=root n=ansible | fatal: [192.168.73.175]: FAILED! => {"changed": false, "msg": "Could not find or access 'copy/templates/esgi.jpg'\nSearched in:\n\t/etc/ansible/roles/copy/files/copy/templates/esgi.jpg\n\t/etc/ansible/roles/copy/copy/templates/esgi.jpg\n\t/etc/ansible/roles/copy/tasks/files/copy/templates/esgi.jpg\n\t/etc/ansible/roles/copy/tasks/copy/templates/esgi.jpg\n\t/etc/ansible/files/copy/templates/esgi.jpg\n\t/etc/ansible/copy/templates/esgi.jpg on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2023-03-30 21:46:56,336 p=4596 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:46:56,336 p=4596 u=root n=ansible | 192.168.73.175             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-30 21:53:17,371 p=4891 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:53:17,399 p=4891 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:53:19,269 p=4891 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:53:19,400 p=4891 u=root n=ansible | TASK [copy : Copier l’image esgi.jpg dans le dossier /var/www/html] **********************************
+2023-03-30 21:53:19,534 p=4891 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-03-30 21:53:19,537 p=4891 u=root n=ansible | fatal: [192.168.73.175]: FAILED! => {"changed": false, "msg": "Could not find or access '/copy/templates/esgi.jpeg' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2023-03-30 21:53:19,540 p=4891 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:53:19,541 p=4891 u=root n=ansible | 192.168.73.175             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-30 21:54:02,171 p=4916 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:54:02,202 p=4916 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:54:03,556 p=4916 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:54:03,696 p=4916 u=root n=ansible | TASK [copy : Copier l’image esgi.jpg dans le dossier /var/www/html] **********************************
+2023-03-30 21:54:04,633 p=4916 u=root n=ansible | changed: [192.168.73.175]
+2023-03-30 21:54:04,781 p=4916 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:54:04,781 p=4916 u=root n=ansible | 192.168.73.175             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-30 21:57:09,947 p=4965 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 21:57:09,977 p=4965 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 21:57:11,879 p=4965 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:57:11,994 p=4965 u=root n=ansible | TASK [copy : Copier l’image esgi.jpg dans le dossier /var/www/html] **********************************
+2023-03-30 21:57:12,927 p=4965 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 21:57:12,953 p=4965 u=root n=ansible | TASK [copy : Copy index.j2] **************************************************************************
+2023-03-30 21:57:13,100 p=4965 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ansible.errors.AnsibleUndefinedVariable: 'classe' is undefined. 'classe' is undefined
+2023-03-30 21:57:13,101 p=4965 u=root n=ansible | fatal: [192.168.73.175]: FAILED! => {"changed": false, "msg": "AnsibleUndefinedVariable: 'classe' is undefined. 'classe' is undefined"}
+2023-03-30 21:57:13,103 p=4965 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 21:57:13,104 p=4965 u=root n=ansible | 192.168.73.175             : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-30 22:01:02,381 p=5028 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 22:01:02,415 p=5028 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 22:01:04,296 p=5028 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 22:01:04,412 p=5028 u=root n=ansible | TASK [copy : Copier l’image esgi.jpg dans le dossier /var/www/html] **********************************
+2023-03-30 22:01:05,358 p=5028 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 22:01:05,385 p=5028 u=root n=ansible | TASK [copy : Copy index.j2] **************************************************************************
+2023-03-30 22:01:06,103 p=5028 u=root n=ansible | changed: [192.168.73.175]
+2023-03-30 22:01:06,248 p=5028 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 22:01:06,249 p=5028 u=root n=ansible | 192.168.73.175             : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-30 22:03:41,476 p=5112 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 22:03:41,507 p=5112 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 22:03:43,407 p=5112 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 22:03:43,521 p=5112 u=root n=ansible | TASK [copy : Copier l’image esgi.jpg dans le dossier /var/www/html] **********************************
+2023-03-30 22:03:44,436 p=5112 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 22:03:44,463 p=5112 u=root n=ansible | TASK [copy : Copy index.j2] **************************************************************************
+2023-03-30 22:03:45,019 p=5112 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 22:03:45,180 p=5112 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 22:03:45,180 p=5112 u=root n=ansible | 192.168.73.175             : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-30 22:06:05,552 p=5165 u=root n=ansible | - Role roles/ntp was created successfully
+2023-03-30 22:10:01,049 p=5195 u=root n=ansible | ERROR! the role 'template' was not found in /etc/ansible/roles:/root/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/etc/ansible
+
+The error appears to be in '/etc/ansible/projet.yml': line 7, column 6, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   - {role: copy, tags: copy}
+   - {role: template, tags: template}
+     ^ here
+
+2023-03-30 22:10:41,374 p=5199 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 22:10:41,407 p=5199 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 22:10:43,374 p=5199 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 22:10:43,522 p=5199 u=root n=ansible | TASK [ntp : Installation of ntp] *********************************************************************
+2023-03-30 22:10:53,113 p=5199 u=root n=ansible | changed: [192.168.73.175]
+2023-03-30 22:10:53,141 p=5199 u=root n=ansible | TASK [ntp : show result_ntp] *************************************************************************
+2023-03-30 22:10:53,174 p=5199 u=root n=ansible | ok: [192.168.73.175] => {
+    "result_ntp": {
+        "cache_update_time": 1680203951,
+        "cache_updated": false,
+        "changed": true,
+        "diff": {},
+        "failed": false,
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nThe following additional packages will be installed:\n  libevent-pthreads-2.1-7 libopts25 sntp\nSuggested packages:\n  ntp-doc\nThe following packages will be REMOVED:\n  systemd-timesyncd\nThe following NEW packages will be installed:\n  libevent-pthreads-2.1-7 libopts25 ntp sntp\n0 upgraded, 4 newly installed, 1 to remove and 27 not upgraded.\nNeed to get 855 kB of archives.\nAfter this operation, 2296 kB of additional disk space will be used.\nGet:1 http://fr.archive.ubuntu.com/ubuntu jammy/main amd64 libevent-pthreads-2.1-7 amd64 2.1.12-stable-1build3 [7642 B]\nGet:2 http://fr.archive.ubuntu.com/ubuntu jammy/universe amd64 libopts25 amd64 1:5.18.16-4 [59.5 kB]\nGet:3 http://fr.archive.ubuntu.com/ubuntu jammy/universe amd64 ntp amd64 1:4.2.8p15+dfsg-1ubuntu2 [721 kB]\nGet:4 http://fr.archive.ubuntu.com/ubuntu jammy/universe amd64 sntp amd64 1:4.2.8p15+dfsg-1ubuntu2 [67.1 kB]\nFetched 855 kB in 2s (409 kB/s)\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 74725 files and directories currently installed.)\r\nRemoving systemd-timesyncd (249.11-0ubuntu3.7) ...\r\nSelecting previously unselected package libevent-pthreads-2.1-7:amd64.\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 74711 files and directories currently installed.)\r\nPreparing to unpack .../libevent-pthreads-2.1-7_2.1.12-stable-1build3_amd64.deb ...\r\nUnpacking libevent-pthreads-2.1-7:amd64 (2.1.12-stable-1build3) ...\r\nSelecting previously unselected package libopts25:amd64.\r\nPreparing to unpack .../libopts25_1%3a5.18.16-4_amd64.deb ...\r\nUnpacking libopts25:amd64 (1:5.18.16-4) ...\r\nSelecting previously unselected package ntp.\r\nPreparing to unpack .../ntp_1%3a4.2.8p15+dfsg-1ubuntu2_amd64.deb ...\r\nUnpacking ntp (1:4.2.8p15+dfsg-1ubuntu2) ...\r\nSelecting previously unselected package sntp.\r\nPreparing to unpack .../sntp_1%3a4.2.8p15+dfsg-1ubuntu2_amd64.deb ...\r\nUnpacking sntp (1:4.2.8p15+dfsg-1ubuntu2) ...\r\nSetting up libopts25:amd64 (1:5.18.16-4) ...\r\nSetting up ntp (1:4.2.8p15+dfsg-1ubuntu2) ...\r\nCreated symlink /etc/systemd/system/network-pre.target.wants/ntp-systemd-netif.path → /lib/systemd/system/ntp-systemd-netif.path.\r\nCreated symlink /etc/systemd/system/multi-user.target.wants/ntp.service → /lib/systemd/system/ntp.service.\r\nntp-systemd-netif.service is a disabled or a static unit, not starting it.\r\nSetting up libevent-pthreads-2.1-7:amd64 (2.1.12-stable-1build3) ...\r\nSetting up sntp (1:4.2.8p15+dfsg-1ubuntu2) ...\r\nProcessing triggers for man-db (2.10.2-1) ...\r\nProcessing triggers for dbus (1.12.20-2ubuntu4.1) ...\r\nProcessing triggers for libc-bin (2.35-0ubuntu3.1) ...\r\nNEEDRESTART-VER: 3.5\nNEEDRESTART-KCUR: 5.15.0-69-generic\nNEEDRESTART-KEXP: 5.15.0-69-generic\nNEEDRESTART-KSTA: 1\n",
+        "stdout_lines": [
+            "Reading package lists...",
+            "Building dependency tree...",
+            "Reading state information...",
+            "The following additional packages will be installed:",
+            "  libevent-pthreads-2.1-7 libopts25 sntp",
+            "Suggested packages:",
+            "  ntp-doc",
+            "The following packages will be REMOVED:",
+            "  systemd-timesyncd",
+            "The following NEW packages will be installed:",
+            "  libevent-pthreads-2.1-7 libopts25 ntp sntp",
+            "0 upgraded, 4 newly installed, 1 to remove and 27 not upgraded.",
+            "Need to get 855 kB of archives.",
+            "After this operation, 2296 kB of additional disk space will be used.",
+            "Get:1 http://fr.archive.ubuntu.com/ubuntu jammy/main amd64 libevent-pthreads-2.1-7 amd64 2.1.12-stable-1build3 [7642 B]",
+            "Get:2 http://fr.archive.ubuntu.com/ubuntu jammy/universe amd64 libopts25 amd64 1:5.18.16-4 [59.5 kB]",
+            "Get:3 http://fr.archive.ubuntu.com/ubuntu jammy/universe amd64 ntp amd64 1:4.2.8p15+dfsg-1ubuntu2 [721 kB]",
+            "Get:4 http://fr.archive.ubuntu.com/ubuntu jammy/universe amd64 sntp amd64 1:4.2.8p15+dfsg-1ubuntu2 [67.1 kB]",
+            "Fetched 855 kB in 2s (409 kB/s)",
+            "(Reading database ... ",
+            "(Reading database ... 5%",
+            "(Reading database ... 10%",
+            "(Reading database ... 15%",
+            "(Reading database ... 20%",
+            "(Reading database ... 25%",
+            "(Reading database ... 30%",
+            "(Reading database ... 35%",
+            "(Reading database ... 40%",
+            "(Reading database ... 45%",
+            "(Reading database ... 50%",
+            "(Reading database ... 55%",
+            "(Reading database ... 60%",
+            "(Reading database ... 65%",
+            "(Reading database ... 70%",
+            "(Reading database ... 75%",
+            "(Reading database ... 80%",
+            "(Reading database ... 85%",
+            "(Reading database ... 90%",
+            "(Reading database ... 95%",
+            "(Reading database ... 100%",
+            "(Reading database ... 74725 files and directories currently installed.)",
+            "Removing systemd-timesyncd (249.11-0ubuntu3.7) ...",
+            "Selecting previously unselected package libevent-pthreads-2.1-7:amd64.",
+            "(Reading database ... ",
+            "(Reading database ... 5%",
+            "(Reading database ... 10%",
+            "(Reading database ... 15%",
+            "(Reading database ... 20%",
+            "(Reading database ... 25%",
+            "(Reading database ... 30%",
+            "(Reading database ... 35%",
+            "(Reading database ... 40%",
+            "(Reading database ... 45%",
+            "(Reading database ... 50%",
+            "(Reading database ... 55%",
+            "(Reading database ... 60%",
+            "(Reading database ... 65%",
+            "(Reading database ... 70%",
+            "(Reading database ... 75%",
+            "(Reading database ... 80%",
+            "(Reading database ... 85%",
+            "(Reading database ... 90%",
+            "(Reading database ... 95%",
+            "(Reading database ... 100%",
+            "(Reading database ... 74711 files and directories currently installed.)",
+            "Preparing to unpack .../libevent-pthreads-2.1-7_2.1.12-stable-1build3_amd64.deb ...",
+            "Unpacking libevent-pthreads-2.1-7:amd64 (2.1.12-stable-1build3) ...",
+            "Selecting previously unselected package libopts25:amd64.",
+            "Preparing to unpack .../libopts25_1%3a5.18.16-4_amd64.deb ...",
+            "Unpacking libopts25:amd64 (1:5.18.16-4) ...",
+            "Selecting previously unselected package ntp.",
+            "Preparing to unpack .../ntp_1%3a4.2.8p15+dfsg-1ubuntu2_amd64.deb ...",
+            "Unpacking ntp (1:4.2.8p15+dfsg-1ubuntu2) ...",
+            "Selecting previously unselected package sntp.",
+            "Preparing to unpack .../sntp_1%3a4.2.8p15+dfsg-1ubuntu2_amd64.deb ...",
+            "Unpacking sntp (1:4.2.8p15+dfsg-1ubuntu2) ...",
+            "Setting up libopts25:amd64 (1:5.18.16-4) ...",
+            "Setting up ntp (1:4.2.8p15+dfsg-1ubuntu2) ...",
+            "Created symlink /etc/systemd/system/network-pre.target.wants/ntp-systemd-netif.path → /lib/systemd/system/ntp-systemd-netif.path.",
+            "Created symlink /etc/systemd/system/multi-user.target.wants/ntp.service → /lib/systemd/system/ntp.service.",
+            "ntp-systemd-netif.service is a disabled or a static unit, not starting it.",
+            "Setting up libevent-pthreads-2.1-7:amd64 (2.1.12-stable-1build3) ...",
+            "Setting up sntp (1:4.2.8p15+dfsg-1ubuntu2) ...",
+            "Processing triggers for man-db (2.10.2-1) ...",
+            "Processing triggers for dbus (1.12.20-2ubuntu4.1) ...",
+            "Processing triggers for libc-bin (2.35-0ubuntu3.1) ...",
+            "NEEDRESTART-VER: 3.5",
+            "NEEDRESTART-KCUR: 5.15.0-69-generic",
+            "NEEDRESTART-KEXP: 5.15.0-69-generic",
+            "NEEDRESTART-KSTA: 1"
+        ]
+    }
+}
+2023-03-30 22:10:53,211 p=5199 u=root n=ansible | TASK [ntp : Already installed] ***********************************************************************
+2023-03-30 22:10:53,239 p=5199 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 22:10:53,278 p=5199 u=root n=ansible | TASK [ntp : Restart ntp] *****************************************************************************
+2023-03-30 22:10:54,062 p=5199 u=root n=ansible | changed: [192.168.73.175]
+2023-03-30 22:10:54,091 p=5199 u=root n=ansible | TASK [ntp : Creation du fichier ntp] *****************************************************************
+2023-03-30 22:10:54,628 p=5199 u=root n=ansible | changed: [192.168.73.175]
+2023-03-30 22:10:54,657 p=5199 u=root n=ansible | TASK [ntp : Ajouter les serveurs NTP avec une liste et boucle  dans le fichier] **********************
+2023-03-30 22:10:54,683 p=5199 u=root n=ansible | fatal: [192.168.73.175]: FAILED! => {"msg": "'ntp_server' is undefined. 'ntp_server' is undefined"}
+2023-03-30 22:10:54,685 p=5199 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 22:10:54,686 p=5199 u=root n=ansible | 192.168.73.175             : ok=5    changed=3    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2023-03-30 22:12:36,356 p=5256 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 22:12:36,388 p=5256 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 22:12:38,329 p=5256 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 22:12:38,477 p=5256 u=root n=ansible | TASK [ntp : Installation of ntp] *********************************************************************
+2023-03-30 22:12:39,478 p=5256 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 22:12:39,508 p=5256 u=root n=ansible | TASK [ntp : show result_ntp] *************************************************************************
+2023-03-30 22:12:39,537 p=5256 u=root n=ansible | ok: [192.168.73.175] => {
+    "result_ntp": {
+        "cache_update_time": 1680203951,
+        "cache_updated": false,
+        "changed": false,
+        "failed": false
+    }
+}
+2023-03-30 22:12:39,578 p=5256 u=root n=ansible | TASK [ntp : Already installed] ***********************************************************************
+2023-03-30 22:12:39,622 p=5256 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "ntp is already installed"
+}
+2023-03-30 22:12:39,663 p=5256 u=root n=ansible | TASK [ntp : Restart ntp] *****************************************************************************
+2023-03-30 22:12:39,705 p=5256 u=root n=ansible | skipping: [192.168.73.175]
+2023-03-30 22:12:39,746 p=5256 u=root n=ansible | TASK [ntp : Creation du fichier ntp] *****************************************************************
+2023-03-30 22:12:40,275 p=5256 u=root n=ansible | changed: [192.168.73.175]
+2023-03-30 22:12:40,300 p=5256 u=root n=ansible | TASK [ntp : Ajouter les serveurs NTP avec une liste et boucle  dans le fichier] **********************
+2023-03-30 22:12:40,757 p=5256 u=root n=ansible | changed: [192.168.73.175] => (item=30.30.30.30)
+2023-03-30 22:12:41,079 p=5256 u=root n=ansible | changed: [192.168.73.175] => (item=14.14.14.14)
+2023-03-30 22:12:41,385 p=5256 u=root n=ansible | changed: [192.168.73.175] => (item=5.5.5.5)
+2023-03-30 22:12:41,710 p=5256 u=root n=ansible | changed: [192.168.73.175] => (item=8.8.8.8)
+2023-03-30 22:12:41,856 p=5256 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 22:12:41,857 p=5256 u=root n=ansible | 192.168.73.175             : ok=6    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-03-30 22:18:26,720 p=5367 u=root n=ansible | - Role roles/firewall was created successfully
+2023-03-30 22:21:09,031 p=5375 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 22:21:09,068 p=5375 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 22:21:10,985 p=5375 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 22:21:11,164 p=5375 u=root n=ansible | TASK [firewall : Installation of iptables] ***********************************************************
+2023-03-30 22:21:12,154 p=5375 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 22:21:12,184 p=5375 u=root n=ansible | TASK [firewall : show result_iptables] ***************************************************************
+2023-03-30 22:21:12,216 p=5375 u=root n=ansible | ok: [192.168.73.175] => {
+    "result_iptables": {
+        "cache_update_time": 1680203951,
+        "cache_updated": false,
+        "changed": false,
+        "failed": false
+    }
+}
+2023-03-30 22:21:12,253 p=5375 u=root n=ansible | TASK [firewall : Already installed] ******************************************************************
+2023-03-30 22:21:12,293 p=5375 u=root n=ansible | ok: [192.168.73.175] => {
+    "msg": "iptables is already installed"
+}
+2023-03-30 22:21:12,335 p=5375 u=root n=ansible | TASK [firewall : Autoriser le port 80 sur le firewall] ***********************************************
+2023-03-30 22:21:12,963 p=5375 u=root n=ansible | changed: [192.168.73.175]
+2023-03-30 22:21:13,116 p=5375 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 22:21:13,116 p=5375 u=root n=ansible | 192.168.73.175             : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-30 22:30:03,114 p=5420 u=root n=ansible | - Role roles/users was created successfully
+2023-03-30 22:34:04,053 p=5431 u=root n=ansible | ERROR! the role 'user' was not found in /etc/ansible/roles:/root/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/etc/ansible
+
+The error appears to be in '/etc/ansible/projet.yml': line 9, column 6, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   - {role: firewall, tags: firewall}
+   - {role: user, tags: user}
+     ^ here
+
+2023-03-30 22:34:35,726 p=5435 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 22:34:35,768 p=5435 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 22:34:37,662 p=5435 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 22:34:37,863 p=5435 u=root n=ansible | TASK [users : Créer les utilisateurs] ****************************************************************
+2023-03-30 22:34:37,890 p=5435 u=root n=ansible | fatal: [192.168.73.175]: FAILED! => {"censored": "the output has been hidden due to the fact that 'no_log: true' was specified for this result"}
+2023-03-30 22:34:37,891 p=5435 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 22:34:37,891 p=5435 u=root n=ansible | 192.168.73.175             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-30 22:35:30,187 p=5458 u=root n=ansible | PLAY [CLIENT] ****************************************************************************************
+2023-03-30 22:35:30,222 p=5458 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-03-30 22:35:31,522 p=5458 u=root n=ansible | ok: [192.168.73.175]
+2023-03-30 22:35:31,737 p=5458 u=root n=ansible | TASK [users : Créer les utilisateurs] ****************************************************************
+2023-03-30 22:35:32,226 p=5458 u=root n=ansible | changed: [192.168.73.175] => (item=None)
+2023-03-30 22:35:32,601 p=5458 u=root n=ansible | changed: [192.168.73.175] => (item=None)
+2023-03-30 22:35:32,991 p=5458 u=root n=ansible | changed: [192.168.73.175] => (item=None)
+2023-03-30 22:35:33,356 p=5458 u=root n=ansible | changed: [192.168.73.175] => (item=None)
+2023-03-30 22:35:33,358 p=5458 u=root n=ansible | changed: [192.168.73.175]
+2023-03-30 22:35:33,527 p=5458 u=root n=ansible | PLAY RECAP *******************************************************************************************
+2023-03-30 22:35:33,528 p=5458 u=root n=ansible | 192.168.73.175             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

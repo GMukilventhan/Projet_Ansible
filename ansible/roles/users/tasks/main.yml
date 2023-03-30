@@ -1,0 +1,10 @@
+---
+# tasks file for roles/users
+#
+- name: Créer les utilisateurs
+  user:
+    name: "{{ item.Name }}"
+    password: "{{ item.Password }}"
+    state: present
+  loop: "{{ users }}"
+  no_log: true
