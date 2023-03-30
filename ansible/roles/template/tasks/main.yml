@@ -1,8 +1,0 @@
----
-# tasks file for roles/template
-- name: Copier la template
-  template:
-    src: /transfert/index.j2
-    dest: /var/www/html/index.html
-
-
