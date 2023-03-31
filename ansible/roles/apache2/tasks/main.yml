@@ -30,7 +30,6 @@
   register: result
   ignore_errors: yes
   failed_when: false
-  tags: debug
 
 - name: "debug message"
   debug:
@@ -42,12 +41,10 @@
   debug:
     msg: "L’URL ne répond pas "
   when: result.status != 200
-  tags: debug
 
-#bonus redemémarrer le service en cas de down
+    #bonus redemémarrer le service en cas de down
 - name: "Restart service after URL ko"
   service:
     name: apache2
     state: restarted
   when: result.status != 200
-  tags: debug
