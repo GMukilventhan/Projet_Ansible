@@ -163,19 +163,16 @@ vim roles/apache2/tasks/main.yml
   register: result
   ignore_errors: yes
   failed_when: false
-  tags: debug
 
 - name: "debug message"
   debug:
     msg: "L’URL répond"
   when: result.status == 200
-  tags: debug
 
 - name: "Eror message"
   debug:
     msg: "L’URL ne répond pas "
   when: result.status != 200
-  tags: debug
 
 #bonus redemémarrer le service en cas de down
 - name: "Restart service after URL ko"
@@ -183,7 +180,6 @@ vim roles/apache2/tasks/main.yml
     name: apache2
     state: restarted
   when: result.status != 200
-  tags: debug
 ```
 ## Copy
 Attention il faut créer les fichiers esgi.jpg et index.j2 dans le dossier templates
