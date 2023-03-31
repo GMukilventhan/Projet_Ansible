@@ -102,7 +102,6 @@ vim projet.yml
 ```
 
 ## Creation de roles
-
 - Créer un dossier apache2
 ```bash
 ansible-galaxy init roles/apache2
@@ -125,13 +124,14 @@ ansible-galaxy init roles/user
 ```
 
 ## Creation de tâches
-
-- Créer un fichier main.yml dans le dossier apache2
+## Apache2 + Bonus
+- Ouvrir le fichier main.yml dans le dossier apache2
 ```bash
 vim roles/apache2/tasks/main.yml
 ```
 - Ajouter les tâches
 ```bash
+---
 # tasks file for roles/apache2
 
 - name: Installation Apache2
@@ -185,8 +185,171 @@ vim roles/apache2/tasks/main.yml
   when: result.status != 200
   tags: debug
 ```
+## Copy
+Attention il faut créer les fichiers esgi.jpg et index.j2 dans le dossier templates
 
+- Ouvrir le fichier main.yml dans le dossier copy
+```bash
+vim roles/copy/tasks/main.yml
+```
+- Ajouter les tâches
+```bash
+---
+# tasks file for roles/copy
+#
+- name: Copier l’image esgi.jpg dans le dossier /var/www/html
+  copy:
+    src: /etc/ansible/roles/copy/templates/esgi.jpg
+    dest: /var/www/html
 
+- name: Copy index.j2
+  template:
+    src: /etc/ansible/roles/copy/templates/index.j2
+    dest: /var/www/html/index.html
+```
+- Ajouter les variables
+```bash
+ansible-vault edit globalvars/all.yml
+```
+```bash
+classe: 4SRC2
+groupe: 5
+```
+
+## NTP
+- Ouvrir le fichier main.yml dans le dossier ntp
+```bash
+vim roles/ntp/tasks/main.yml
+```
+- Ajouter les tâches
+```bash
+---
+# tasks file for roles/ntp
+#
+- name: Installation of ntp
+  ansible.builtin.apt:
+    name: ntp
+    state: present
+  register: result_ntp
+
+- name: show result_ntp
+  debug:
+    var: result_ntp
+
+- name: Already installed
+  debug:
+    msg: "ntp is already installed"
+  when: result_ntp.changed == false
+
+- name: Restart ntp
+  service:
+    name: ntp
+    state: restarted
+  when: result_ntp.changed == true
+
+- name: Creation du fichier ntp
+  file:
+    dest: "/etc/ntp.conf"
+    state: touch
+    mode: 0644
+
+- name: Ajouter les serveurs NTP avec une liste et boucle  dans le fichier
+  lineinfile:
+    path: "/etc/ntp.conf"
+    line: "server {{ item }}"
+    state: present
+  loop: "{{ ntp_server }}"
+```
+- Ajouter les variables
+```bash
+ansible-vault edit globalvars/all.yml
+```
+```bash
+ntp_server:
+  - 30.30.30.30
+  - 14.14.14.14
+  - 5.5.5.5
+  - 8.8.8.8
+```
+
+## Firewall
+- Ouvrir le fichier main.yml dans le dossier firewall
+```bash
+vim roles/firewall/tasks/main.yml
+```
+- Ajouter les tâches
+```bash
+---
+# tasks file for roles/firewall
+
+- name: Installation of iptables
+  ansible.builtin.apt:
+    name: iptables
+    state: present
+  register: result_iptables
+
+- name: show result_iptables
+  debug:
+    var: result_iptables
+
+- name: Already installed
+  debug:
+    msg: "iptables is already installed"
+  when: result_iptables.changed == false
+
+- name: Autoriser le port 80 sur le firewall
+  iptables:
+    chain: INPUT
+    protocol: tcp
+    destination_port: 80
+    jump: ACCEPT
+```
+
+## User
+
+- Ouvrir le fichier main.yml dans le dossier user
+```bash
+vim roles/user/tasks/main.yml
+```
+
+- Ajouter les tâches
+```bash
+---
+# tasks file for roles/users
+#
+- name: Créer les utilisateurs
+  user:
+    name: "{{ item.Name }}"
+    password: "{{ item.Password }}"
+    state: present
+  loop: "{{ users }}"
+  no_log: true
+```
+- Ajouter les variables
+```bash
+ansible-vault edit globalvars/all.yml
+```
+```bash
+users:
+  - { Name: Mukil, Password: mdp }
+  - { Name: Theo, Password: mdp }
+  - { Name: Mohamed, Password: mdp }
+  - { Name: Maxime, Password: mdp }
+```
+
+## Playbook
+- Ouvrir le fichier projet.yml et ajouter les roles
+```bash
+- hosts: CLIENT
+  vars_files:
+   - "{{ playbook_dir }}/globalvars/all.yml"
+  roles:
+   - {role: apache2, tags: apache2}
+   - {role: copy, tags: copy}
+   - {role: ntp, tags: ntp}
+   - {role: firewall, tags: firewall}
+   - {role: users, tags: users}
+```
 
 
 ## Utilisation 
@@ -194,13 +357,14 @@ vim roles/apache2/tasks/main.yml
 ```bash
 ansible-playbook projet.yml
 ```
-
+- Pour lancer un role en particulier, il faut se placer dans le dossier du projet et lancer la commande suivante:
+```bash
+ansible-playbook projet.yml --tags "nom_du_role"
+```
 
 ## Authors
-
 - [GEORGE Mukilventhan](https://github.com/GMukilventhan)
 - [PAYEN Théo](https://github.com/theo-payen)
 - [WAZANE Mohamed](https://github.com/mowazane)
 - [HABERMANN Maxime](https://github.com/MaximeHab)
-
 
