@@ -35,7 +35,6 @@
   debug:
     msg: "L’URL répond"
   when: result.status == 200
-  tags: debug
 
 - name: "Eror message"
   debug:
