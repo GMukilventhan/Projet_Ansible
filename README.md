@@ -361,6 +361,7 @@ ansible-playbook projet.yml --tags "nom_du_role"
 - voici le repertoire : 
 ```bash
 /etc/ansible 
+
 ├── ansible.cfg fichier de configuration
 ├── globalvars
 │   └── all.yml
