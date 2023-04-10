@@ -22,7 +22,7 @@
     state: restarted
   when: result_apache2.changed == true
 
-- name: "Vérifier que l’URL répond"
+- name: "Check that the URL responds"
   ansible.builtin.uri:
     url: http://localhost
     status_code: 200
@@ -33,12 +33,12 @@
 
 - name: "debug message"
   debug:
-    msg: "L’URL répond"
+    msg: "The URL answers"
   when: result.status == 200
 
-- name: "Eror message"
+- name: "Error message"
   debug:
-    msg: "L’URL ne répond pas "
+    msg: "The URL does not respond"
   when: result.status != 200
 
     #bonus redemémarrer le service en cas de down
