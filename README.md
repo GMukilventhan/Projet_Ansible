@@ -357,25 +357,21 @@ ansible-playbook projet.yml
 ```bash
 ansible-playbook projet.yml --tags "nom_du_role"
 ```
-
-## Authors
-- [GEORGE Mukilventhan](https://github.com/GMukilventhan)
-- [PAYEN Théo](https://github.com/theo-payen)
-- [WAZANE Mohamed](https://github.com/mowazane)
-- [HABERMANN Maxime](https://github.com/MaximeHab)
-
-## Test
+## Repertoire
 - voici le repertoire : 
 ```bash
 /etc/ansible 
 ├── ansible.cfg fichier de configuration
+├── globalvars
+│   └── all.yml
 ├── hosts fichier d'inventaire par défaut
+├── inventory fichier d'inventaire
+├── logfile.log 
+├── projet.yml fichier de playbook 
 ├── roles répertoire pour les rôles
-│   ├── apache2
-│   │   ├── tasks
-│   │   │   └── main.yml
-│   │   └── templates
-│   │       └── index.html
+│   ├── apach2
+│   │   └── tasks
+│   │       └── main.yml
 │   ├── copy
 │   │   ├── tasks
 │   │   │   └── main.yml
@@ -391,7 +387,10 @@ ansible-playbook projet.yml --tags "nom_du_role"
 │   └── users
 │       └── tasks
 │           └── main.yml
-├── globalvars
-│   └── all.yml
-└── projet.yml
 ```
+## Authors
+- [GEORGE Mukilventhan](https://github.com/GMukilventhan)
+- [PAYEN Théo](https://github.com/theo-payen)
+- [WAZANE Mohamed](https://github.com/mowazane)
+- [HABERMANN Maxime](https://github.com/MaximeHab)
+
