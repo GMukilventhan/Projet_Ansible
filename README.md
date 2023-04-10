@@ -316,7 +316,7 @@ vim roles/firewall/tasks/main.yml
     msg: "iptables is already installed"
   when: result_iptables.changed == false
 
-- name: Autoriser le port 80 sur le firewall
+- name: Allow port 80 on the firewall
   iptables:
     chain: INPUT
     protocol: tcp
