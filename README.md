@@ -155,7 +155,7 @@ vim roles/apache2/tasks/main.yml
     state: restarted
   when: result_apache2.changed == true
 
-- name: "Vérifier que l’URL répond"
+- name: "Check that the URL responds"
   ansible.builtin.uri:
     url: http://localhost
     status_code: 200
@@ -166,20 +166,21 @@ vim roles/apache2/tasks/main.yml
 
 - name: "debug message"
   debug:
-    msg: "L’URL répond"
+    msg: "The URL answers"
   when: result.status == 200
 
-- name: "Eror message"
+- name: "Error message"
   debug:
-    msg: "L’URL ne répond pas "
+    msg: "The URL does not respond"
   when: result.status != 200
 
-#bonus redemémarrer le service en cas de down
+    #bonus redemémarrer le service en cas de down
 - name: "Restart service after URL ko"
   service:
     name: apache2
     state: restarted
   when: result.status != 200
+
 ```
 ## Copy
 Attention il faut créer les fichiers esgi.jpg et index.j2 dans le dossier templates
