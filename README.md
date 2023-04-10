@@ -366,7 +366,6 @@ ansible-playbook projet.yml --tags "nom_du_role"
 │   └── all.yml
 ├── hosts fichier d'inventaire par défaut
 ├── inventory fichier d'inventaire
-├── logfile.log 
 ├── projet.yml fichier de playbook 
 ├── roles répertoire pour les rôles
 │   ├── apach2
@@ -387,6 +386,10 @@ ansible-playbook projet.yml --tags "nom_du_role"
 │   └── users
 │       └── tasks
 │           └── main.yml
+└── logfile.log
+
+
+
 ```
 ## Authors
 - [GEORGE Mukilventhan](https://github.com/GMukilventhan)
