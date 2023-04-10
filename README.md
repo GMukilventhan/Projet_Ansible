@@ -364,3 +364,34 @@ ansible-playbook projet.yml --tags "nom_du_role"
 - [WAZANE Mohamed](https://github.com/mowazane)
 - [HABERMANN Maxime](https://github.com/MaximeHab)
 
+## Test
+- voici le repertoire : 
+```bash
+/etc/ansible 
+├── ansible.cfg fichier de configuration
+├── hosts fichier d'inventaire par défaut
+├── roles répertoire pour les rôles
+│   ├── apache2
+│   │   ├── tasks
+│   │   │   └── main.yml
+│   │   └── templates
+│   │       └── index.html
+│   ├── copy
+│   │   ├── tasks
+│   │   │   └── main.yml
+│   │   └── templates
+│   │       ├── esgi.jpg
+│   │       └── index.j2
+│   ├── firewall
+│   │   └── tasks
+│   │       └── main.yml
+│   ├── ntp
+│   │   └── tasks
+│   │       └── main.yml
+│   └── users
+│       └── tasks
+│           └── main.yml
+├── globalvars
+│   └── all.yml
+└── projet.yml
+```
