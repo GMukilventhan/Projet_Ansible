@@ -358,18 +358,17 @@ ansible-playbook projet.yml
 ansible-playbook projet.yml --tags "nom_du_role"
 ```
 ## Repertoire
-- voici le repertoire : 
 ```bash
 /etc/ansible 
 
-├── ansible.cfg fichier de configuration
+├── ansible.cfg 
 ├── globalvars
 │   └── all.yml
-├── hosts fichier d'inventaire par défaut
-├── inventory fichier d'inventaire
-├── projet.yml fichier de playbook 
-├── roles répertoire pour les rôles
-│   ├── apach2
+├── hosts 
+├── inventory 
+├── projet.yml 
+├── roles 
+│   ├── apache2
 │   │   └── tasks
 │   │       └── main.yml
 │   ├── copy
