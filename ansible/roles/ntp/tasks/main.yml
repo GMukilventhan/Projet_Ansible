@@ -21,14 +21,14 @@
     path: "{{ ntp_file_config }}"
   register: check_file
 
-- name: Creation du fichier ntp
+- name: Creation of the ntp file
   file:
     dest: "{{ ntp_file_config }}"
     state: touch
     mode: 0644
   when: not check_file.stat.exists
 
-- name: Ajouter les serveurs NTP avec une liste et boucle  dans le fichier
+- name: Add NTP servers with a list and loop in the file
   lineinfile:
     path: "{{ ntp_file_config }}"
     line: "server {{ item }}"
