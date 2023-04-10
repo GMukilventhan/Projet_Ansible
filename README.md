@@ -336,13 +336,14 @@ vim roles/user/tasks/main.yml
 ---
 # tasks file for roles/users
 #
-- name: Créer les utilisateurs
+- name: Create users
   user:
     name: "{{ item.Name }}"
     password: "{{ item.Password }}"
     state: present
   loop: "{{ users }}"
   no_log: true
+
 ```
 - Ajouter les variables
 ```bash
