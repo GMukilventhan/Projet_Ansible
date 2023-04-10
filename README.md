@@ -222,7 +222,7 @@ vim roles/ntp/tasks/main.yml
 ```bash
 ---
 # tasks file for roles/ntp
-#
+
 - name: Installation of ntp
   ansible.builtin.apt:
     name: ntp
@@ -238,24 +238,38 @@ vim roles/ntp/tasks/main.yml
     msg: "ntp is already installed"
   when: result_ntp.changed == false
 
+- name: check file exist
+  stat:
+    path: "{{ ntp_file_config }}"
+  register: check_file
+
+- name: Creation of the ntp file
+  file:
+    dest: "{{ ntp_file_config }}"
+    state: touch
+    mode: 0644
+  when: not check_file.stat.exists
+
+- name: Add NTP servers with a list and loop in the file
+  lineinfile:
+    path: "{{ ntp_file_config }}"
+    line: "server {{ item }}"
+    state: present
+  loop: "{{ ntp_server }}"
+  register: update_ntp
+
+- name: check  file update          
+  set_fact:
+    change_status: true
+  loop: "{{ update_ntp.results }}"
+  when: item.changed
+
 - name: Restart ntp
   service:
     name: ntp
     state: restarted
-  when: result_ntp.changed == true
+  when: result_ntp.changed == true or change_status == true or not change_status is defined
 
-- name: Creation du fichier ntp
-  file:
-    dest: "/etc/ntp.conf"
-    state: touch
-    mode: 0644
-
-- name: Ajouter les serveurs NTP avec une liste et boucle  dans le fichier
-  lineinfile:
-    path: "/etc/ntp.conf"
-    line: "server {{ item }}"
-    state: present
-  loop: "{{ ntp_server }}"
 ```
 - Ajouter les variables
 ```bash
