@@ -282,6 +282,14 @@ ntp_server:
   - 5.5.5.5
   - 8.8.8.8
 ```
+- Ajouter le chemin du fichier 
+```bash
+vim vars/main.yml
+```
+- Chemin du fichier 
+```bash
+ntp_file_config: /etc/ntp.conf
+```
 
 ## Firewall
 - Ouvrir le fichier main.yml dans le dossier firewall
@@ -396,7 +404,9 @@ ansible-playbook projet.yml --tags "nom_du_role"
 │   │   └── tasks
 │   │       └── main.yml
 │   ├── ntp
-│   │   └── tasks
+│   │   ├── tasks
+│   │   │   └── main.yml
+│   │   └── vars
 │   │       └── main.yml
 │   └── users
 │       └── tasks
