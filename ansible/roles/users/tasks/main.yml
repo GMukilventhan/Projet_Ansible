@@ -1,7 +1,7 @@
 ---
 # tasks file for roles/users
 #
-- name: Créer les utilisateurs
+- name: Create users
   user:
     name: "{{ item.Name }}"
     password: "{{ item.Password }}"
