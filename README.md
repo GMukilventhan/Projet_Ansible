@@ -194,7 +194,7 @@ vim roles/copy/tasks/main.yml
 ---
 # tasks file for roles/copy
 #
-- name: Copier l’image esgi.jpg dans le dossier /var/www/html
+- name: Copy the esgi.jpg image to the /var/www/html folder
   copy:
     src: /etc/ansible/roles/copy/templates/esgi.jpg
     dest: /var/www/html
