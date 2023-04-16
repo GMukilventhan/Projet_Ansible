@@ -85,9 +85,26 @@ mkdir globalvars
 ansible-vault create globalvars/all.yml
 ```
 ```bash
+classe: 4SRC2
+groupe: 5
+
+ntp_server:
+  - 30.30.30.30
+  - 14.14.14.14
+  - 5.5.5.5
+  - 8.8.8.8
+
+users:
+  - { Name: Mukil, Password: Password123! }
+  - { Name: Theo, Password: Password123! }
+  - { Name: Mohamed, Password: Password123! }
+  - { Name: Maxime, Password: Password123! }
+  ```
+  
+```bash
 touch vault_password
  vim vault_password
-mdp
+gfive
 ```
 - Ajouter les variables
 ```bash
