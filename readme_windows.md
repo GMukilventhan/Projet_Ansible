@@ -41,3 +41,20 @@ $file = "$env:temp\ConfigureRemotingForAnsible.ps1"
 (New-Object -TypeName System.Net.WebClient).DownloadFile($url, $file)
 powershell.exe -ExecutionPolicy ByPass -File $file
 ```
+
+On s'assure que WinRM a été configuré correctement par le script (commandes de diagnostic) :
+
+Vérification de la configuration du service WinRM
+```bash
+winrm get winrm/config/Service
+```
+
+Vérification de la configuration de Winrs
+```bash
+winrm get winrm/config/Winrs
+```
+
+Vérification de la configuration des "listeners" WinRM
+```bash
+winrm enumerate winrm/config/Listener
+```
