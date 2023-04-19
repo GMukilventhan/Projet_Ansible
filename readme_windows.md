@@ -33,3 +33,11 @@ S'assurer que WinRM n'est pas encore configuré
 winrm get winrm/config/Service
 ```
 Configurer WinRM à l'aide d'un [script](https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1)
+
+```bash
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+$url = "https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1"
+$file = "$env:temp\ConfigureRemotingForAnsible.ps1"
+(New-Object -TypeName System.Net.WebClient).DownloadFile($url, $file)
+powershell.exe -ExecutionPolicy ByPass -File $file
+```
