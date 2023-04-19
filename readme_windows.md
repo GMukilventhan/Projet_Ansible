@@ -32,5 +32,4 @@ S'assurer que WinRM n'est pas encore configuré
 ```bash
 winrm get winrm/config/Service
 ```
-Configurer WinRM à l'aide d'un script
-[Script](https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1)
+Configurer WinRM à l'aide d'un [script](https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1)
