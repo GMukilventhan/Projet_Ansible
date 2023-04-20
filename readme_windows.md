@@ -105,6 +105,7 @@ ansible_winrm_server_cert_validation=ignore
 ```
 
 Définir NANO comme éditeur de texte par défaut :
+
 Ouvrir le fichier ~/.bashrc
 ```bash
 nano ~/.bashrc
