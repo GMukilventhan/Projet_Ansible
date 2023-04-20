@@ -104,3 +104,22 @@ ansible_winrm_transport=basic
 ansible_winrm_server_cert_validation=ignore
 ```
 
+Définir NANO comme éditeur de texte par défaut :
+Ouvrir le fichier ~/.bashrc
+Ajouter la ligne suivante
+```bash
+export EDITOR=nano
+```
+
+Création d'un fichier chiffré de variables
+```bash
+ansible-vault create globalvars/all.yml
+```
+
+Editer le fichier et ajouter des variables
+```bash
+ansible-vault create globalvars/all.yml
+```
+
+APRES - Création du rôle winping (windows ping)
+
