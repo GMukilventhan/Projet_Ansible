@@ -85,3 +85,22 @@ apt install software-properties-common
 add-apt-repository --yes --update ppa:ansible/ansible 
 apt install ansible
 ```
+
+Créer un fichier d'inventaire sous /etc/ansible
+```bash
+touch inventory
+```
+
+Y ajouter les informations sur l'hôte ainsi que les variables de configuration
+```bash
+[windows]
+windows10 ansible_host=IP
+[windows:vars]
+ansible_user=ansible
+ansible_password=PASSWORD
+ansible_port=5986
+ansible_connection=winrm
+ansible_winrm_transport=basic
+ansible_winrm_server_cert_validation=ignore
+```
+
