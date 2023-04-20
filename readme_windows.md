@@ -58,3 +58,13 @@ Vérification de la configuration des "listeners" WinRM
 ```bash
 winrm enumerate winrm/config/Listener
 ```
+
+Créer un user local dédié pour Ansible
+```bash
+net user USER_NAME PASSWORD /add
+```
+
+Ajout cet user au groupe Administrateurs du poste
+```bash
+net localgroup administrators USER_ACCOUNT /add
+```
