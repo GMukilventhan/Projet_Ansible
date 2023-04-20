@@ -117,7 +117,7 @@ ansible-vault create globalvars/all.yml
 
 Editer le fichier et ajouter des variables
 ```bash
-ansible-vault create globalvars/all.yml
+ansible-vault edit globalvars/all.yml
 ```
 
 APRES - Création du rôle winping (windows ping)
