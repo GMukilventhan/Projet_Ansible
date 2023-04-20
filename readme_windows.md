@@ -16,6 +16,10 @@ HTTPS : 5986
 - Règles de firewall autorisant les ports 5985 ou 5986 (WinRM)
 - WinRM activé et son service démarré
 
+### Pré-requis serveur Ansible
+
+- Python 2.7
+
 ### Configuration hôtes Windows
 
 S'assurer que Powershell est en version 3.0 au minimum
@@ -67,4 +71,10 @@ net user USER_NAME PASSWORD /add
 Ajout cet user au groupe Administrateurs du poste
 ```bash
 net localgroup administrators USER_ACCOUNT /add
+```
+### Configuration serveur Ansible
+
+S'assurer qu'une version récente de Python est installée
+```bash
+python3 --version
 ```
