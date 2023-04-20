@@ -78,3 +78,10 @@ S'assurer qu'une version récente de Python est installée
 ```bash
 python3 --version
 ```
+
+Installer Ansible
+```bash
+apt install software-properties-common
+add-apt-repository --yes --update ppa:ansible/ansible 
+apt install ansible
+```
