@@ -132,6 +132,17 @@ Editer le fichier et ajouter des variables
 ansible-vault edit globalvars/all.yml
 ```
 
+Ajouter les variables au format YAML
+---
+ansible_user: ansible
+ansible_password: Azerty@77
+ansible_port: 5986
+ansible_connection: winrm
+ansible_winrm_transport: basic
+ansible_winrm_server_cert_validation: ignore
+
+
+
 Afin d'éviter de taper le pwd vault à chaque fois, créer un fichier de stockage du pwd
 (On placera ce fichier dans le répertoire homme de root)
 ```bash
