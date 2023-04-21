@@ -91,12 +91,6 @@ Créer un fichier d'inventaire sous /etc/ansible
 touch inventory
 ```
 
-Indiquer dans le fichier de configuration Ansible (ansible.cfg) le chemin du fichier d'inventaire
-```bash
-[defaults]
-inventory =./inventory
-```
-
 Y ajouter les informations sur l'hôte ainsi que les variables de configuration
 ```bash
 [windows]
@@ -108,6 +102,12 @@ ansible_port=5986
 ansible_connection=winrm
 ansible_winrm_transport=basic
 ansible_winrm_server_cert_validation=ignore
+```
+
+Indiquer dans le fichier de configuration Ansible (ansible.cfg) le chemin du fichier d'inventaire
+```bash
+[defaults]
+inventory =./inventory
 ```
 
 Définir NANO comme éditeur de texte par défaut :
