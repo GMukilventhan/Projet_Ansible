@@ -177,3 +177,18 @@ Editer le fichier YAML des tâches du rôles (/etc/ansible/roles/winping/tasks/m
     - name: test connection
       ansible.windows.win_ping:
 ```
+
+Création d'un playbook contenant le rôle précédemment crée (/etc/ansible)
+```bash
+touch/nano win_playbook.yml
+```
+
+Ajouter les informations suivantes
+```bash
+---
+- hosts: windows
+  vars_files:
+    - "{{ playbook_dir }}/globalvars/all.yml"
+  roles:
+    - {role: winping, tags: winping}
+```
