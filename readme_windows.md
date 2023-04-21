@@ -91,6 +91,12 @@ Créer un fichier d'inventaire sous /etc/ansible
 touch inventory
 ```
 
+Indiquer dans le fichier de configuration Ansible (ansible.cfg) le chemin du fichier d'inventaire
+```bash
+[defaults]
+inventory =./inventory
+```
+
 Y ajouter les informations sur l'hôte ainsi que les variables de configuration
 ```bash
 [windows]
