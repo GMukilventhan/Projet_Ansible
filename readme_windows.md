@@ -162,4 +162,7 @@ vault_password_file = /root/vault_pwd
 
 Création d'un rôle pour ping la machine Windows (winping) <br />
 Tout d'abord, se placer dans le répertoire roles (etc/ansible/roles)
+```bash
+ansible-galaxy init winping
+```
 
