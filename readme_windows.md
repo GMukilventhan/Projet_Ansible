@@ -166,3 +166,14 @@ Tout d'abord, se placer dans le répertoire roles (etc/ansible/roles)
 ansible-galaxy init winping
 ```
 
+Editer le fichier YAML des tâches du rôles (/etc/ansible/roles/winping/tasks/main.yml)
+```bash
+---
+- name: win_ping module demo
+  hosts: windows
+  become: false
+  gather_facts: false
+  tasks:
+    - name: test connection
+      ansible.windows.win_ping:
+```
