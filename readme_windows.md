@@ -126,5 +126,21 @@ Editer le fichier et ajouter des variables
 ansible-vault edit globalvars/all.yml
 ```
 
+Afin d'éviter de taper le pwd vault à chaque fois, créer un fichier de stockage du pwd
+(On placera ce fichier dans le répertoire homme de root)
+```bash
+touch vault_pwd
+```
+
+Ajouter le pwd sans aucune synthaxe particulière
+```bash
+nano vault_pwd
+```
+
+Dans le fichier de configurable d'Ansible (ansible.cfg), indiquer le chemin du fichier de stockage du pwd
+```bash
+vault_password_file = /root/vault_pwd
+```
+
 APRES - Création du rôle winping (windows ping)
 
