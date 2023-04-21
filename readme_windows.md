@@ -160,6 +160,6 @@ Dans le fichier de configurable d'Ansible (ansible.cfg), indiquer le chemin du f
 vault_password_file = /root/vault_pwd
 ```
 
-Création d'un rôle pour ping la machine Windows (winping)\n
+Création d'un rôle pour ping la machine Windows (winping) <br />
 Tout d'abord, se placer dans le répertoire roles (etc/ansible/roles)
 
