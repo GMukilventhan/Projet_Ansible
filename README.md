@@ -1,7 +1,6 @@
 
 # Projet Ansible
 ## Sujet 
-## Description
 - Créer un fichier d’inventaire et mettre l’IP d’une machine distante
 - Copier la clé SSH du serveur Ansible sur la machine distante (/root/.ssh/authorized_keys)
 - Créer un fichier de variable vault et le charger dans le playbook ci-dessous
